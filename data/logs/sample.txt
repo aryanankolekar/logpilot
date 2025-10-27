@@ -1,0 +1,7 @@
+2025-10-26T14:59:01Z inference-pod-1 INFO Model loaded in 1.23s
+2025-10-26T15:02:11Z inference-pod-2 ERROR Timeout on request id=abc123; traceback: TimeoutError
+2025-10-26T15:02:12Z inference-pod-2 WARN Retrying request id=abc123
+2025-10-26T16:10:00Z angular-gui INFO User clicked /predict
+2025-10-26T16:12:10Z inference-pod-1 ERROR OOM when executing batch size=32
+2025-10-26T16:12:15Z orchestrator INFO Re-scheduled job for node X
+2025-10-26T17:00:00Z orchestrator ERROR Crash: invalid pointer at module net/transport

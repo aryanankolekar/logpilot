@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+watchdog
+pydantic
+python-dotenv
+faiss-cpu
+sentence-transformers
+langchain
+httpx
+pytest
