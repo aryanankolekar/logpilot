@@ -1,65 +1,37 @@
-from .storage import vector_store_search
-from .llm import generate_answer as extractive_generate
+"""
+rag.py — core Retrieval-Augmented Generation logic.
+"""
 
-# attempt to import the ollama adapter
-try:
-    from .llm_ollama import ollama_generate
-    _OLLAMA_AVAILABLE = True
-except Exception:
-    ollama_generate = None
-    _OLLAMA_AVAILABLE = False
+from typing import Dict, Any
+from .embeddings import embed_text
+from .storage import search_index
+from .llm import run_llm
 
 
-def _make_prompt_from_query_and_contexts(query: str, contexts: list[dict]) -> str:
-    """
-    Create a concise prompt for the LLM that includes the user query and
-    the retrieved evidence chunks (as short citations).
-    """
-    lines = []
-    lines.append(f"Answer the user query using ONLY the evidence below. If unsure, say you don't know.\n")
-    lines.append(f"User query: {query}\n")
-    lines.append("Evidence:")
-    for i, c in enumerate(contexts, start=1):
-        doc = c.get("doc_id", "<doc>")
-        text = c.get("chunk_text", "").strip()
-        lines.append(f"[{i}] {doc}: {text}")
-    lines.append("\nPlease produce a short, factual answer. Then list which evidence lines you used (by index).")
-    return "\n".join(lines)
+def answer_query(query: str) -> Dict[str, Any]:
+    """Perform retrieval + local LLM reasoning."""
+    query_vec = embed_text(query)
+    results = search_index(query_vec, k=5)
 
+    context = "\n".join([r["chunk_text"] for r in results])
+    prompt = f"""
+You are LogCopilot, a distributed system log analyst.
+Analyze the following retrieved logs and answer the query.
 
-def answer_query(query: str, k: int = 6, model: str = None) -> dict:
-    # retrieve
-    contexts = vector_store_search(query, k=k)
+Query: {query}
 
-    # Try Ollama if available
-    if _OLLAMA_AVAILABLE:
-        print("OLLAMA_AVAILABLE:", _OLLAMA_AVAILABLE)
-        prompt = _make_prompt_from_query_and_contexts(query, contexts)
-        try:
-            llm_resp = ollama_generate(prompt, model=model)
-            text = llm_resp.get("text", "")
-            return {
-                "query": query,
-                "answer": text,
-                "confidence": 0.0,  # Ollama does not give a numeric confidence; we keep heuristic or add later
-                "evidence": contexts,
-                "llm_raw": llm_resp.get("raw"),
-            }
-        except Exception as e:
-            # fall back to extractive summarizer and include the error for debugging
-            fallback = extractive_generate(query, contexts)
-            return {
-                "query": query,
-                "answer": fallback["text"],
-                "confidence": fallback.get("confidence", 0.0),
-                "evidence": contexts,
-                "llm_error": str(e),
-            }
-    # Ollama not available — use extractive stub
-    fallback = extractive_generate(query, contexts)
+Logs:
+{context}
+
+Respond with a concise summary of findings, root causes, and notable patterns.
+"""
+
+    llm_response, llm_error = run_llm(prompt)
+
     return {
         "query": query,
-        "answer": fallback["text"],
-        "confidence": fallback.get("confidence", 0.0),
-        "evidence": contexts,
+        "answer": llm_response or "No clear answer found in retrieved context.",
+        "confidence": float(len(results)) / 5.0,
+        "evidence": results,
+        "llm_error": llm_error,
     }

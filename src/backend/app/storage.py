@@ -1,123 +1,82 @@
 """
-Durable FAISS + SQLite metadata store.
+storage.py — persistent FAISS + metadata store for LogCopilot.
 """
-from pathlib import Path
-import sqlite3
-import numpy as np
+
+import json
 import faiss
-from typing import List, Dict
-from .embeddings import embed_texts
+import numpy as np
+from pathlib import Path
+from typing import List
 from .config import settings
 
-VECTOR_DIR = Path(settings.VECTOR_DIR)
-VECTOR_DIR.mkdir(parents=True, exist_ok=True)
-INDEX_PATH = VECTOR_DIR / "faiss.index"
-DB_PATH = VECTOR_DIR / "metadata.db"
+INDEX_DIR = Path(settings.VECTOR_STORE_PATH)
+FAISS_PATH = INDEX_DIR / "faiss.index"
+META_PATH = INDEX_DIR / "metadata.json"
 
-_index: faiss.Index = None
-_conn: sqlite3.Connection = None
-_default_dim = None
+INDEX_DIR.mkdir(parents=True, exist_ok=True)
 
-
-def _init_db():
-    global _conn
-    if _conn is None:
-        _conn = sqlite3.connect(str(DB_PATH))
-        cur = _conn.cursor()
-        cur.execute(
-            """
-            CREATE TABLE IF NOT EXISTS metadata (
-                id INTEGER PRIMARY KEY,
-                doc_id TEXT,
-                chunk_text TEXT
-            )
-            """
-        )
-        _conn.commit()
-    return _conn
+_index = None
+_metadata = []
 
 
-def _load_index(dim: int):
-    global _index
-    if _index is not None:
-        return _index
-    if INDEX_PATH.exists():
-        try:
-            _index = faiss.read_index(str(INDEX_PATH))
-            return _index
-        except Exception:
-            pass
-    _index = faiss.IndexFlatL2(dim)
-    return _index
+def load_index():
+    """Load or initialize FAISS index."""
+    global _index, _metadata
+    if FAISS_PATH.exists():
+        _index = faiss.read_index(str(FAISS_PATH))
+        print(f"[Storage] Loaded FAISS index from {FAISS_PATH}")
+    else:
+        _index = faiss.IndexFlatL2(384)
+        print("[Storage] Created new FAISS index (384d)")
+
+    if META_PATH.exists():
+        with open(META_PATH, "r", encoding="utf-8") as f:
+            _metadata = json.load(f)
+    else:
+        _metadata = []
 
 
-def _persist_index():
-    if _index is not None:
-        faiss.write_index(_index, str(INDEX_PATH))
+def save_index():
+    """Persist FAISS index + metadata."""
+    if _index is None:
+        return
+    faiss.write_index(_index, str(FAISS_PATH))
+    with open(META_PATH, "w", encoding="utf-8") as f:
+        json.dump(_metadata, f, indent=2)
+    print("[Storage] Saved FAISS index + metadata")
 
 
-def _chunk_text(text: str, max_chars: int = 512) -> List[str]:
-    lines = [l.strip() for l in text.splitlines() if l.strip()]
-    chunks, cur, cur_len = [], [], 0
-    for line in lines:
-        if cur_len + len(line) > max_chars and cur:
-            chunks.append(" ".join(cur))
-            cur, cur_len = [line], len(line)
-        else:
-            cur.append(line)
-            cur_len += len(line)
-    if cur:
-        chunks.append(" ".join(cur))
-    return chunks[:2000]
+def add_to_index(vectors: np.ndarray, chunks: List[str], source_file: str):
+    """Add embeddings and metadata to FAISS."""
+    global _index, _metadata
+    if _index is None:
+        load_index()
+
+    vectors = np.array(vectors, dtype="float32")
+    _index.add(vectors)
+
+    for c in chunks:
+        _metadata.append({"source": source_file, "chunk": c[:200]})
+
+    save_index()
 
 
-def vector_store_upsert(doc_id: str, text: str) -> int:
-    global _default_dim
-    conn = _init_db()
-    chunks = _chunk_text(text, max_chars=settings.CHUNK_SIZE)
-    if not chunks:
-        return 0
+def search_index(query_vector: np.ndarray, k: int = 5):
+    """Retrieve nearest chunks by vector similarity."""
+    global _index, _metadata
+    if _index is None:
+        load_index()
 
-    embeddings = embed_texts(chunks)
-    dim = len(embeddings[0])
-    _default_dim = _default_dim or dim
-    idx = _load_index(dim)
+    query_vector = np.array(query_vector, dtype="float32").reshape(1, -1)
+    distances, indices = _index.search(query_vector, k)
 
-    start_id = int(idx.ntotal)
-    arr = np.array(embeddings).astype("float32")
-    idx.add(arr)
-    _persist_index()
-
-    cur = conn.cursor()
-    for i, chunk in enumerate(chunks):
-        cur.execute(
-            "INSERT INTO metadata (id, doc_id, chunk_text) VALUES (?, ?, ?)",
-            (start_id + i, doc_id, chunk),
-        )
-    conn.commit()
-    return len(chunks)
-
-
-def vector_store_search(query: str, k: int = 5) -> List[Dict]:
-    conn = _init_db()
-    q_emb = embed_texts([query])[0]
-    dim = len(q_emb)
-    idx = _load_index(dim)
-    if idx.ntotal == 0:
-        return []
-
-    q_vec = np.array([q_emb]).astype("float32")
-    D, I = idx.search(q_vec, k)
     results = []
-    for score, iid in zip(D[0].tolist(), I[0].tolist()):
-        if iid < 0:
-            continue
-        cur = conn.cursor()
-        cur.execute("SELECT doc_id, chunk_text FROM metadata WHERE id = ?", (int(iid),))
-        row = cur.fetchone()
-        if row:
-            doc_id, chunk_text = row
-            results.append(
-                {"id": int(iid), "doc_id": doc_id, "chunk_text": chunk_text, "score": float(score)}
-            )
+    for i, idx in enumerate(indices[0]):
+        if 0 <= idx < len(_metadata):
+            results.append({
+                "id": int(idx),
+                "score": float(distances[0][i]),
+                "doc_id": _metadata[idx]["source"],
+                "chunk_text": _metadata[idx]["chunk"],
+            })
     return results
