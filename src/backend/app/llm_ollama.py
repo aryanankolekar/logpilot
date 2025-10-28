@@ -13,7 +13,7 @@ def query_local_llm(prompt: str):
         payload = {
             "model": settings.LLM_MODEL,
             "messages": [
-                {"role": "system", "content": "You are LogCopilot, an expert in analyzing logs."},
+                {"role": "system", "content": "You are LogCopilot, an expert in analyzing logs, deciphering patterns and helping user with their log related queries. Always answer in plaintext - do not use markdown."},
                 {"role": "user", "content": prompt}
             ],
             "stream": False
@@ -23,7 +23,7 @@ def query_local_llm(prompt: str):
             settings.LLM_ENDPOINT,
             data=json.dumps(payload),
             headers={"Content-Type": "application/json"},
-            timeout=120
+            timeout=300
         )
 
         if response.status_code != 200:

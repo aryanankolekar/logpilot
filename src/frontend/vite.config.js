@@ -6,13 +6,10 @@ export default defineConfig({
   server: {
     port: 5173,
     proxy: {
-      "/query": {
+      "/api": {
         target: "http://127.0.0.1:6969",
         changeOrigin: true,
-      },
-      "/ingest": {
-        target: "http://127.0.0.1:6969",
-        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ""),
       },
     },
   },

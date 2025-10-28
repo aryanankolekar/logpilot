@@ -1,25 +1,20 @@
 import axios from "axios";
 
-const api = axios.create({
-  baseURL: "http://127.0.0.1:6969",
-  timeout: 60000,
-});
+const API_BASE = "http://localhost:6969";
 
 export async function sendQuery(query) {
   try {
-    const res = await api.post("/query", { query });
-    return res.data;
-  } catch (err) {
-    console.error("Backend error:", err);
-    throw err;
+    const response = await axios.post(
+      `${API_BASE}/query`,
+      { query },
+      { timeout: 180000 } // 3 min timeout for slow LLMs
+    );
+    return response.data;
+  } catch (error) {
+    console.error("Error querying backend:", error);
+    return {
+      answer: "⚠️ Server took too long to respond or failed.",
+      evidence: [],
+    };
   }
-}
-
-export async function uploadFile(file) {
-  const formData = new FormData();
-  formData.append("file", file);
-  const res = await api.post("/ingest/upload", formData, {
-    headers: { "Content-Type": "multipart/form-data" },
-  });
-  return res.data;
 }

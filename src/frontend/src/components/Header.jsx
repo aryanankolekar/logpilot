@@ -1,15 +1,13 @@
 import React from "react";
+import "./Header.css";
 
-export default function Header({ onToggleSidebar }) {
+export default function Header({ connected }) {
   return (
-    <header className="header">
-      <button className="sidebar-toggle" onClick={onToggleSidebar}>
-        ☰
-      </button>
-      <h1>LogPilot Copilot</h1>
-      <div className="header-right">
-        <button className="header-btn">⚙️</button>
+    <div className="header">
+      <h2>⚡ LogPilot</h2>
+      <div className={`status ${connected ? "online" : "offline"}`}>
+        {connected ? "Connected" : "Offline"}
       </div>
-    </header>
+    </div>
   );
 }
