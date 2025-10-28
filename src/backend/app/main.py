@@ -1,43 +1,40 @@
-from fastapi import FastAPI, HTTPException, UploadFile, File
-from pathlib import Path
-import uvicorn
-import threading
-from .config import settings
+from fastapi import FastAPI, Request
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
 from .rag import answer_query
 from .ingest import start_watch
-from .storage import vector_store_upsert
+import threading
 
+app = FastAPI(title="LogPilot Backend")
 
-app = FastAPI(title="Copilot Log Assistant - Backend")
-
-
-@app.get("/health")
-async def health():
-    return {"status": "ok"}
-
-
-@app.post("/ingest/upload")
-async def ingest_upload(file: UploadFile = File(...)):
-    data = await file.read()
-    path = Path(settings.LOG_DIR) / file.filename
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_bytes(data)
-
-    text = data.decode("utf-8", errors="ignore")
-    count = vector_store_upsert(file.filename, text)
-    return {"status": "ok", "filename": str(path), "chunks_indexed": count}
-
+# ✅ Allow frontend CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # or ["http://localhost:5173"]
+    allow_credentials=True,
+    allow_methods=["*"],  # <-- this fixes the 405 OPTIONS issue
+    allow_headers=["*"],
+)
 
 @app.post("/query")
-async def query(payload: dict):
-    q = payload.get("q") or payload.get("query")
-    if not q:
-        raise HTTPException(status_code=400, detail="missing 'q' in payload")
-    result = answer_query(q)
-    return result
+async def query_endpoint(request: Request):
+    """Main query endpoint"""
+    data = await request.json()
+    query = data.get("query", "")
+    if not query:
+        return JSONResponse({"error": "Missing query"}, status_code=400)
+    result = answer_query(query)
+    return JSONResponse(result)
 
+@app.get("/")
+def health():
+    return {"status": "ok"}
 
-if __name__ == "__main__":
-    t = threading.Thread(target=lambda: start_watch(Path(settings.LOG_DIR)), daemon=True)
-    t.start()
-    uvicorn.run(app, host=settings.HOST, port=settings.PORT)
+# ✅ Background thread to watch log directory
+def start_background_watch():
+    watcher_thread = threading.Thread(target=start_watch, daemon=True)
+    watcher_thread.start()
+
+@app.on_event("startup")
+def startup_event():
+    start_background_watch()

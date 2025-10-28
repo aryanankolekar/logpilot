@@ -1,0 +1,890 @@
+[
+  {
+    "source": "sample.txt",
+    "chunk": "2025-10-26T14:59:01Z inference-pod-1 INFO Model loaded in 1.23s 2025-10-26T15:02:11Z inference-pod-2 ERROR Timeout on request id=abc123; traceback: TimeoutError 2025-10-26T15:02:12Z inference-pod-2 WA"
+  },
+  {
+    "source": "sample.txt",
+    "chunk": "2025-10-26T14:59:01Z inference-pod-1 INFO Model loaded in 1.23s 2025-10-26T15:02:11Z inference-pod-2 ERROR Timeout on request id=abc123; traceback: TimeoutError 2025-10-26T15:02:12Z inference-pod-2 WA"
+  },
+  {
+    "source": "sample.txt",
+    "chunk": "2025-10-26T14:59:01Z inference-pod-1 INFO Model loaded in 1.23s 2025-10-26T15:02:11Z inference-pod-2 ERROR Timeout on request id=abc123; traceback: TimeoutError 2025-10-26T15:02:12Z inference-pod-2 WA"
+  },
+  {
+    "source": "sample.txt",
+    "chunk": "2025-10-26T14:59:01Z inference-pod-1 INFO Model loaded in 1.23s 2025-10-26T15:02:11Z inference-pod-2 ERROR Timeout on request id=abc123; traceback: TimeoutError 2025-10-26T15:02:12Z inference-pod-2 WA"
+  },
+  {
+    "source": "sample.txt",
+    "chunk": "2025-10-26T14:59:01Z inference-pod-1 INFO Model loaded in 1.23s 2025-10-26T15:02:11Z inference-pod-2 ERROR Timeout on request id=abc123; traceback: TimeoutError 2025-10-26T15:02:12Z inference-pod-2 WA"
+  },
+  {
+    "source": "sample.txt",
+    "chunk": "2025-10-26T14:59:01Z inference-pod-1 INFO Model loaded in 1.23s 2025-10-26T15:02:11Z inference-pod-2 ERROR Timeout on request id=abc123; traceback: TimeoutError 2025-10-26T15:02:12Z inference-pod-2 WA"
+  },
+  {
+    "source": "sample.txt",
+    "chunk": "2025-10-26T14:59:01Z inference-pod-1 INFO Model loaded in 1.23s 2025-10-26T15:02:11Z inference-pod-2 ERROR Timeout on request id=abc123; traceback: TimeoutError 2025-10-26T15:02:12Z inference-pod-2 WA"
+  },
+  {
+    "source": "python-infer-eval-61.jsonl.log",
+    "chunk": "{\"ts\": \"2025-09-12T23:56:11.209576+05:30\", \"pod\": \"python-infer-eval-61\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"00a0edca-fcac-4c9d-830e-256d5b34ef24\", \"batch\": 22, \"lat_ms\": 725, \"mem_mb\": 12"
+  },
+  {
+    "source": "python-infer-eval-61.jsonl.log",
+    "chunk": "\"level\": \"WARN\", \"event\": \"inference\", \"req\": \"394bc5df-0348-4eb8-8189-2ded2492128b\", \"batch\": 22, \"lat_ms\": 287, \"mem_mb\": 13598} {\"ts\": \"2025-09-12T23:59:15.209576+05:30\", \"pod\": \"python-infer-eval-"
+  },
+  {
+    "source": "python-infer-eval-61.jsonl.log",
+    "chunk": "\"req\": \"ca182a6d-e695-4e4c-9c54-e102c6829dad\", \"batch\": 29, \"lat_ms\": 265, \"mem_mb\": 3355} {\"ts\": \"2025-09-13T00:02:01.209576+05:30\", \"pod\": \"python-infer-eval-61\", \"level\": \"INFO\", \"event\": \"inferenc"
+  },
+  {
+    "source": "python-infer-eval-61.jsonl.log",
+    "chunk": "{\"ts\": \"2025-09-13T00:05:07.209576+05:30\", \"pod\": \"python-infer-eval-61\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"ae141515-fb49-46b6-822d-ed4322fd01f9\", \"batch\": 18, \"lat_ms\": 1358, \"mem_mb\": 9"
+  },
+  {
+    "source": "python-infer-eval-61.jsonl.log",
+    "chunk": "\"event\": \"inference\", \"req\": \"65a96ad0-7a8a-46e5-8a7d-a28ce7aff656\", \"batch\": 33, \"lat_ms\": 525, \"mem_mb\": 2499} {\"ts\": \"2025-09-13T00:08:03.209576+05:30\", \"pod\": \"python-infer-eval-61\", \"level\": \"INF"
+  },
+  {
+    "source": "python-infer-eval-61.jsonl.log",
+    "chunk": "\"lat_ms\": 819, \"mem_mb\": 4453} {\"ts\": \"2025-09-13T00:11:16.209576+05:30\", \"pod\": \"python-infer-eval-61\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"d64064d9-62cb-4802-8443-f57bd45f1385\", \"batch\":"
+  },
+  {
+    "source": "python-infer-eval-61.jsonl.log",
+    "chunk": "{\"ts\": \"2025-09-13T00:14:12.209576+05:30\", \"pod\": \"python-infer-eval-61\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"a3abb72d-d0ff-4cc9-b1ec-a6df1b006c2b\", \"batch\": 52, \"lat_ms\": 896, \"mem_mb\": 15"
+  },
+  {
+    "source": "python-infer-eval-61.jsonl.log",
+    "chunk": "\"level\": \"INFO\", \"event\": \"inference\", \"req\": \"4ace5bcd-f441-4f7c-98e8-317e507fb4ff\", \"batch\": 37, \"lat_ms\": 1050, \"mem_mb\": 2008} {\"ts\": \"2025-09-13T00:17:19.209576+05:30\", \"pod\": \"python-infer-eval-"
+  },
+  {
+    "source": "python-infer-eval-61.jsonl.log",
+    "chunk": "\"req\": \"6c148ea4-031b-4ac7-90fc-d7a2e3afa93c\", \"batch\": 33, \"lat_ms\": 522, \"mem_mb\": 1383} {\"ts\": \"2025-09-13T00:20:31.209576+05:30\", \"pod\": \"python-infer-eval-61\", \"level\": \"INFO\", \"event\": \"inferenc"
+  },
+  {
+    "source": "python-infer-eval-61.jsonl.log",
+    "chunk": "\"lat_ms\": 1698, \"mem_mb\": 11392} {\"ts\": \"2025-09-13T00:23:24.209576+05:30\", \"pod\": \"python-infer-eval-61\", \"level\": \"ERROR\", \"event\": \"inference\", \"req\": \"46eebf67-6132-4b58-85b8-0d5292d3a212\", \"batch"
+  },
+  {
+    "source": "python-infer-eval-61.jsonl.log",
+    "chunk": "\"pod\": \"python-infer-eval-61\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"6169d3fa-1f5f-46de-b483-eed7ba512fd0\", \"batch\": 56, \"lat_ms\": 1231, \"mem_mb\": 1408} {\"ts\": \"2025-09-13T00:26:34.209576+05"
+  },
+  {
+    "source": "python-infer-eval-61.jsonl.log",
+    "chunk": "\"batch\": 26, \"lat_ms\": 170, \"mem_mb\": 14149} {\"ts\": \"2025-09-13T00:29:43.209576+05:30\", \"pod\": \"python-infer-eval-61\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"293b5d59-5634-4cb3-b7e1-2613cded8"
+  },
+  {
+    "source": "python-infer-eval-61.jsonl.log",
+    "chunk": "\"mem_mb\": 14788} {\"ts\": \"2025-09-13T00:32:59.209576+05:30\", \"pod\": \"python-infer-eval-61\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"c4fa63e2-b389-4a10-8a4c-c5b3ad95938c\", \"batch\": 14, \"lat_ms\": "
+  },
+  {
+    "source": "python-infer-eval-61.jsonl.log",
+    "chunk": "\"pod\": \"python-infer-eval-61\", \"level\": \"ERROR\", \"event\": \"inference\", \"req\": \"b08d8416-2b35-40fe-8f7b-75716bf3a1cd\", \"batch\": 50, \"lat_ms\": 354, \"mem_mb\": 7279, \"error\": \"RuntimeError: model failed t"
+  },
+  {
+    "source": "python-infer-eval-61.jsonl.log",
+    "chunk": "\"req\": \"d3f844ed-80fe-4902-b931-01ab584a6896\", \"batch\": 55, \"lat_ms\": 368, \"mem_mb\": 6712} {\"ts\": \"2025-09-13T00:38:44.209576+05:30\", \"pod\": \"python-infer-eval-61\", \"level\": \"INFO\", \"event\": \"inferenc"
+  },
+  {
+    "source": "python-infer-eval-61.jsonl.log",
+    "chunk": "\"lat_ms\": 535, \"mem_mb\": 13859}"
+  },
+  {
+    "source": "python-infer-eval-61.jsonl.log",
+    "chunk": "{\"ts\": \"2025-09-12T23:56:11.209576+05:30\", \"pod\": \"python-infer-eval-61\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"00a0edca-fcac-4c9d-830e-256d5b34ef24\", \"batch\": 22, \"lat_ms\": 725, \"mem_mb\": 12"
+  },
+  {
+    "source": "python-infer-eval-61.jsonl.log",
+    "chunk": "\"level\": \"WARN\", \"event\": \"inference\", \"req\": \"394bc5df-0348-4eb8-8189-2ded2492128b\", \"batch\": 22, \"lat_ms\": 287, \"mem_mb\": 13598} {\"ts\": \"2025-09-12T23:59:15.209576+05:30\", \"pod\": \"python-infer-eval-"
+  },
+  {
+    "source": "python-infer-eval-61.jsonl.log",
+    "chunk": "\"req\": \"ca182a6d-e695-4e4c-9c54-e102c6829dad\", \"batch\": 29, \"lat_ms\": 265, \"mem_mb\": 3355} {\"ts\": \"2025-09-13T00:02:01.209576+05:30\", \"pod\": \"python-infer-eval-61\", \"level\": \"INFO\", \"event\": \"inferenc"
+  },
+  {
+    "source": "python-infer-eval-61.jsonl.log",
+    "chunk": "{\"ts\": \"2025-09-13T00:05:07.209576+05:30\", \"pod\": \"python-infer-eval-61\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"ae141515-fb49-46b6-822d-ed4322fd01f9\", \"batch\": 18, \"lat_ms\": 1358, \"mem_mb\": 9"
+  },
+  {
+    "source": "python-infer-eval-61.jsonl.log",
+    "chunk": "\"event\": \"inference\", \"req\": \"65a96ad0-7a8a-46e5-8a7d-a28ce7aff656\", \"batch\": 33, \"lat_ms\": 525, \"mem_mb\": 2499} {\"ts\": \"2025-09-13T00:08:03.209576+05:30\", \"pod\": \"python-infer-eval-61\", \"level\": \"INF"
+  },
+  {
+    "source": "python-infer-eval-61.jsonl.log",
+    "chunk": "\"lat_ms\": 819, \"mem_mb\": 4453} {\"ts\": \"2025-09-13T00:11:16.209576+05:30\", \"pod\": \"python-infer-eval-61\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"d64064d9-62cb-4802-8443-f57bd45f1385\", \"batch\":"
+  },
+  {
+    "source": "python-infer-eval-61.jsonl.log",
+    "chunk": "{\"ts\": \"2025-09-13T00:14:12.209576+05:30\", \"pod\": \"python-infer-eval-61\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"a3abb72d-d0ff-4cc9-b1ec-a6df1b006c2b\", \"batch\": 52, \"lat_ms\": 896, \"mem_mb\": 15"
+  },
+  {
+    "source": "python-infer-eval-61.jsonl.log",
+    "chunk": "\"level\": \"INFO\", \"event\": \"inference\", \"req\": \"4ace5bcd-f441-4f7c-98e8-317e507fb4ff\", \"batch\": 37, \"lat_ms\": 1050, \"mem_mb\": 2008} {\"ts\": \"2025-09-13T00:17:19.209576+05:30\", \"pod\": \"python-infer-eval-"
+  },
+  {
+    "source": "python-infer-eval-61.jsonl.log",
+    "chunk": "\"req\": \"6c148ea4-031b-4ac7-90fc-d7a2e3afa93c\", \"batch\": 33, \"lat_ms\": 522, \"mem_mb\": 1383} {\"ts\": \"2025-09-13T00:20:31.209576+05:30\", \"pod\": \"python-infer-eval-61\", \"level\": \"INFO\", \"event\": \"inferenc"
+  },
+  {
+    "source": "python-infer-eval-61.jsonl.log",
+    "chunk": "\"lat_ms\": 1698, \"mem_mb\": 11392} {\"ts\": \"2025-09-13T00:23:24.209576+05:30\", \"pod\": \"python-infer-eval-61\", \"level\": \"ERROR\", \"event\": \"inference\", \"req\": \"46eebf67-6132-4b58-85b8-0d5292d3a212\", \"batch"
+  },
+  {
+    "source": "python-infer-eval-61.jsonl.log",
+    "chunk": "\"pod\": \"python-infer-eval-61\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"6169d3fa-1f5f-46de-b483-eed7ba512fd0\", \"batch\": 56, \"lat_ms\": 1231, \"mem_mb\": 1408} {\"ts\": \"2025-09-13T00:26:34.209576+05"
+  },
+  {
+    "source": "python-infer-eval-61.jsonl.log",
+    "chunk": "\"batch\": 26, \"lat_ms\": 170, \"mem_mb\": 14149} {\"ts\": \"2025-09-13T00:29:43.209576+05:30\", \"pod\": \"python-infer-eval-61\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"293b5d59-5634-4cb3-b7e1-2613cded8"
+  },
+  {
+    "source": "python-infer-eval-61.jsonl.log",
+    "chunk": "\"mem_mb\": 14788} {\"ts\": \"2025-09-13T00:32:59.209576+05:30\", \"pod\": \"python-infer-eval-61\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"c4fa63e2-b389-4a10-8a4c-c5b3ad95938c\", \"batch\": 14, \"lat_ms\": "
+  },
+  {
+    "source": "python-infer-eval-61.jsonl.log",
+    "chunk": "\"pod\": \"python-infer-eval-61\", \"level\": \"ERROR\", \"event\": \"inference\", \"req\": \"b08d8416-2b35-40fe-8f7b-75716bf3a1cd\", \"batch\": 50, \"lat_ms\": 354, \"mem_mb\": 7279, \"error\": \"RuntimeError: model failed t"
+  },
+  {
+    "source": "python-infer-eval-61.jsonl.log",
+    "chunk": "\"req\": \"d3f844ed-80fe-4902-b931-01ab584a6896\", \"batch\": 55, \"lat_ms\": 368, \"mem_mb\": 6712} {\"ts\": \"2025-09-13T00:38:44.209576+05:30\", \"pod\": \"python-infer-eval-61\", \"level\": \"INFO\", \"event\": \"inferenc"
+  },
+  {
+    "source": "python-infer-eval-61.jsonl.log",
+    "chunk": "\"lat_ms\": 535, \"mem_mb\": 13859}"
+  },
+  {
+    "source": "python-infer-eval-66.jsonl.log",
+    "chunk": "{\"ts\": \"2025-09-13T00:22:28.209576+05:30\", \"pod\": \"python-infer-eval-66\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"7d2d5577-ed9b-48fa-9a16-7f4e86345205\", \"batch\": 16, \"lat_ms\": 1703, \"mem_mb\": 3"
+  },
+  {
+    "source": "python-infer-eval-66.jsonl.log",
+    "chunk": "\"event\": \"inference\", \"req\": \"14cca91b-5cdb-467d-b7ab-da868270f21d\", \"batch\": 12, \"lat_ms\": 159, \"mem_mb\": 798} {\"ts\": \"2025-09-13T00:25:12.209576+05:30\", \"pod\": \"python-infer-eval-66\", \"level\": \"DEBU"
+  },
+  {
+    "source": "python-infer-eval-66.jsonl.log",
+    "chunk": "\"lat_ms\": 864, \"mem_mb\": 12209} {\"ts\": \"2025-09-13T00:27:26.209576+05:30\", \"pod\": \"python-infer-eval-66\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"872d4e13-ce7f-477c-b277-b1b67413e4f2\", \"batch\":"
+  },
+  {
+    "source": "python-infer-eval-66.jsonl.log",
+    "chunk": "\"pod\": \"python-infer-eval-66\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"15c710af-0e9f-4050-8caa-1d37b40ae9cc\", \"batch\": 10, \"lat_ms\": 1500, \"mem_mb\": 9338} {\"ts\": \"2025-09-13T00:29:58.209576+05"
+  },
+  {
+    "source": "python-infer-eval-66.jsonl.log",
+    "chunk": "\"req\": \"e67c336a-a4a5-4bf5-92d4-af328ce90eb7\", \"batch\": 52, \"lat_ms\": 1526, \"mem_mb\": 15535} {\"ts\": \"2025-09-13T00:32:35.209576+05:30\", \"pod\": \"python-infer-eval-66\", \"level\": \"ERROR\", \"event\": \"infer"
+  },
+  {
+    "source": "python-infer-eval-66.jsonl.log",
+    "chunk": "\"error\": \"RuntimeError: model failed to allocate tensor\", \"trace\": \"Traceback (most recent call last): ...\"} {\"ts\": \"2025-09-13T00:34:52.209576+05:30\", \"pod\": \"python-infer-eval-66\", \"level\": \"INFO\", "
+  },
+  {
+    "source": "python-infer-eval-66.jsonl.log",
+    "chunk": "\"req\": \"0adcbc60-f77f-4445-9946-ba16c574870c\", \"batch\": 23, \"lat_ms\": 1867, \"mem_mb\": 9990, \"error\": \"RuntimeError: model failed to allocate tensor\", \"trace\": \"Traceback (most recent call last): ...\"}"
+  },
+  {
+    "source": "python-infer-eval-66.jsonl.log",
+    "chunk": "\"mem_mb\": 7348} {\"ts\": \"2025-09-13T00:41:05.209576+05:30\", \"pod\": \"python-infer-eval-66\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"bce9befd-af31-40ee-a951-e4cc0c0ec82d\", \"batch\": 62, \"lat_ms\": 3"
+  },
+  {
+    "source": "python-infer-eval-66.jsonl.log",
+    "chunk": "\"pod\": \"python-infer-eval-66\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"0419998f-5b4f-4e6f-89bf-6c8dc0301ab5\", \"batch\": 43, \"lat_ms\": 850, \"mem_mb\": 8627} {\"ts\": \"2025-09-13T00:44:08.209576+05:"
+  },
+  {
+    "source": "python-infer-eval-66.jsonl.log",
+    "chunk": "\"batch\": 22, \"lat_ms\": 121, \"mem_mb\": 9489} {\"ts\": \"2025-09-13T00:46:33.209576+05:30\", \"pod\": \"python-infer-eval-66\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"e3f979f2-a9d1-46bb-9d6d-d3a95f1c150"
+  },
+  {
+    "source": "python-infer-eval-66.jsonl.log",
+    "chunk": "\"mem_mb\": 4397} {\"ts\": \"2025-09-13T00:49:39.209576+05:30\", \"pod\": \"python-infer-eval-66\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"f7d68861-fcb3-4806-ae58-d8fb44ebcff8\", \"batch\": 46, \"lat_ms\": 1"
+  },
+  {
+    "source": "python-infer-eval-66.jsonl.log",
+    "chunk": "{\"ts\": \"2025-09-13T00:22:28.209576+05:30\", \"pod\": \"python-infer-eval-66\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"7d2d5577-ed9b-48fa-9a16-7f4e86345205\", \"batch\": 16, \"lat_ms\": 1703, \"mem_mb\": 3"
+  },
+  {
+    "source": "python-infer-eval-66.jsonl.log",
+    "chunk": "\"event\": \"inference\", \"req\": \"14cca91b-5cdb-467d-b7ab-da868270f21d\", \"batch\": 12, \"lat_ms\": 159, \"mem_mb\": 798} {\"ts\": \"2025-09-13T00:25:12.209576+05:30\", \"pod\": \"python-infer-eval-66\", \"level\": \"DEBU"
+  },
+  {
+    "source": "python-infer-eval-66.jsonl.log",
+    "chunk": "\"lat_ms\": 864, \"mem_mb\": 12209} {\"ts\": \"2025-09-13T00:27:26.209576+05:30\", \"pod\": \"python-infer-eval-66\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"872d4e13-ce7f-477c-b277-b1b67413e4f2\", \"batch\":"
+  },
+  {
+    "source": "python-infer-eval-66.jsonl.log",
+    "chunk": "\"pod\": \"python-infer-eval-66\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"15c710af-0e9f-4050-8caa-1d37b40ae9cc\", \"batch\": 10, \"lat_ms\": 1500, \"mem_mb\": 9338} {\"ts\": \"2025-09-13T00:29:58.209576+05"
+  },
+  {
+    "source": "python-infer-eval-66.jsonl.log",
+    "chunk": "\"req\": \"e67c336a-a4a5-4bf5-92d4-af328ce90eb7\", \"batch\": 52, \"lat_ms\": 1526, \"mem_mb\": 15535} {\"ts\": \"2025-09-13T00:32:35.209576+05:30\", \"pod\": \"python-infer-eval-66\", \"level\": \"ERROR\", \"event\": \"infer"
+  },
+  {
+    "source": "python-infer-eval-66.jsonl.log",
+    "chunk": "\"error\": \"RuntimeError: model failed to allocate tensor\", \"trace\": \"Traceback (most recent call last): ...\"} {\"ts\": \"2025-09-13T00:34:52.209576+05:30\", \"pod\": \"python-infer-eval-66\", \"level\": \"INFO\", "
+  },
+  {
+    "source": "python-infer-eval-66.jsonl.log",
+    "chunk": "\"req\": \"0adcbc60-f77f-4445-9946-ba16c574870c\", \"batch\": 23, \"lat_ms\": 1867, \"mem_mb\": 9990, \"error\": \"RuntimeError: model failed to allocate tensor\", \"trace\": \"Traceback (most recent call last): ...\"}"
+  },
+  {
+    "source": "python-infer-eval-66.jsonl.log",
+    "chunk": "\"mem_mb\": 7348} {\"ts\": \"2025-09-13T00:41:05.209576+05:30\", \"pod\": \"python-infer-eval-66\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"bce9befd-af31-40ee-a951-e4cc0c0ec82d\", \"batch\": 62, \"lat_ms\": 3"
+  },
+  {
+    "source": "python-infer-eval-66.jsonl.log",
+    "chunk": "\"pod\": \"python-infer-eval-66\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"0419998f-5b4f-4e6f-89bf-6c8dc0301ab5\", \"batch\": 43, \"lat_ms\": 850, \"mem_mb\": 8627} {\"ts\": \"2025-09-13T00:44:08.209576+05:"
+  },
+  {
+    "source": "python-infer-eval-66.jsonl.log",
+    "chunk": "\"batch\": 22, \"lat_ms\": 121, \"mem_mb\": 9489} {\"ts\": \"2025-09-13T00:46:33.209576+05:30\", \"pod\": \"python-infer-eval-66\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"e3f979f2-a9d1-46bb-9d6d-d3a95f1c150"
+  },
+  {
+    "source": "python-infer-eval-66.jsonl.log",
+    "chunk": "\"mem_mb\": 4397} {\"ts\": \"2025-09-13T00:49:39.209576+05:30\", \"pod\": \"python-infer-eval-66\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"f7d68861-fcb3-4806-ae58-d8fb44ebcff8\", \"batch\": 46, \"lat_ms\": 1"
+  },
+  {
+    "source": "python-infer-eval-71.jsonl.log",
+    "chunk": "{\"ts\": \"2025-09-13T00:28:41.209576+05:30\", \"pod\": \"python-infer-eval-71\", \"level\": \"ERROR\", \"event\": \"inference\", \"req\": \"52db213d-9aa3-4ff5-a7c2-9510947db3aa\", \"batch\": 49, \"lat_ms\": 578, \"mem_mb\": 4"
+  },
+  {
+    "source": "python-infer-eval-71.jsonl.log",
+    "chunk": "\"batch\": 54, \"lat_ms\": 605, \"mem_mb\": 200} {\"ts\": \"2025-09-13T00:31:45.209576+05:30\", \"pod\": \"python-infer-eval-71\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"4a30724d-5852-4834-ae85-02337c05dd8"
+  },
+  {
+    "source": "python-infer-eval-71.jsonl.log",
+    "chunk": "{\"ts\": \"2025-09-13T00:35:00.209576+05:30\", \"pod\": \"python-infer-eval-71\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"329a7736-f967-4d4d-ba7d-0fe9ff1abc82\", \"batch\": 37, \"lat_ms\": 432, \"mem_mb\": 14"
+  },
+  {
+    "source": "python-infer-eval-71.jsonl.log",
+    "chunk": "\"event\": \"inference\", \"req\": \"2873c8e6-7d77-4571-b6ee-aa534c2e593d\", \"batch\": 14, \"lat_ms\": 207, \"mem_mb\": 9278} {\"ts\": \"2025-09-13T00:38:10.209576+05:30\", \"pod\": \"python-infer-eval-71\", \"level\": \"INF"
+  },
+  {
+    "source": "python-infer-eval-71.jsonl.log",
+    "chunk": "\"lat_ms\": 1605, \"mem_mb\": 12301} {\"ts\": \"2025-09-13T00:40:10.209576+05:30\", \"pod\": \"python-infer-eval-71\", \"level\": \"WARN\", \"event\": \"inference\", \"req\": \"5848b591-0faf-4a15-b817-847faae9f25a\", \"batch\""
+  },
+  {
+    "source": "python-infer-eval-71.jsonl.log",
+    "chunk": "\"pod\": \"python-infer-eval-71\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"5065cc6d-9f73-4719-8eb8-0c7277bb5522\", \"batch\": 20, \"lat_ms\": 1354, \"mem_mb\": 11714} {\"ts\": \"2025-09-13T00:43:02.209576+05"
+  },
+  {
+    "source": "python-infer-eval-71.jsonl.log",
+    "chunk": "\"event\": \"inference\", \"req\": \"6ba5a51d-9971-4714-8f06-e49402d723bf\", \"batch\": 16, \"lat_ms\": 254, \"mem_mb\": 1465} {\"ts\": \"2025-09-13T00:46:04.209576+05:30\", \"pod\": \"python-infer-eval-71\", \"level\": \"DEB"
+  },
+  {
+    "source": "python-infer-eval-71.jsonl.log",
+    "chunk": "\"batch\": 4, \"lat_ms\": 691, \"mem_mb\": 14548} {\"ts\": \"2025-09-13T00:48:45.209576+05:30\", \"pod\": \"python-infer-eval-71\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"7b005691-e368-4be9-8e1c-22f32d9046d"
+  },
+  {
+    "source": "python-infer-eval-71.jsonl.log",
+    "chunk": "\"mem_mb\": 15080} {\"ts\": \"2025-09-13T00:51:23.209576+05:30\", \"pod\": \"python-infer-eval-71\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"d0733152-869a-4d0f-b201-a5dc0812330e\", \"batch\": 11, \"lat_ms\":"
+  },
+  {
+    "source": "python-infer-eval-71.jsonl.log",
+    "chunk": "\"level\": \"INFO\", \"event\": \"inference\", \"req\": \"8d19be38-ffc0-4f02-9455-680c89ca9c03\", \"batch\": 58, \"lat_ms\": 1970, \"mem_mb\": 5063} {\"ts\": \"2025-09-13T00:54:05.209576+05:30\", \"pod\": \"python-infer-eval-"
+  },
+  {
+    "source": "python-infer-eval-71.jsonl.log",
+    "chunk": "\"req\": \"601b7074-a966-4146-8998-ebd35ab483d7\", \"batch\": 36, \"lat_ms\": 1773, \"mem_mb\": 5835} {\"ts\": \"2025-09-13T00:56:54.209576+05:30\", \"pod\": \"python-infer-eval-71\", \"level\": \"DEBUG\", \"event\": \"infere"
+  },
+  {
+    "source": "python-infer-eval-71.jsonl.log",
+    "chunk": "\"lat_ms\": 1191, \"mem_mb\": 9584} {\"ts\": \"2025-09-13T00:59:49.209576+05:30\", \"pod\": \"python-infer-eval-71\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"bba90a36-227c-4c82-bf61-790393279da7\", \"batch\""
+  },
+  {
+    "source": "python-infer-eval-71.jsonl.log",
+    "chunk": "{\"ts\": \"2025-09-13T01:03:12.209576+05:30\", \"pod\": \"python-infer-eval-71\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"e98fecbd-c5bc-48ba-aa1f-b8acbbf4b559\", \"batch\": 62, \"lat_ms\": 912, \"mem_mb\": 63"
+  },
+  {
+    "source": "python-infer-eval-71.jsonl.log",
+    "chunk": "\"event\": \"inference\", \"req\": \"d803e27c-8c4f-4769-bf7c-e2292b36c710\", \"batch\": 23, \"lat_ms\": 1150, \"mem_mb\": 5927} {\"ts\": \"2025-09-13T01:05:34.209576+05:30\", \"pod\": \"python-infer-eval-71\", \"level\": \"IN"
+  },
+  {
+    "source": "python-infer-eval-71.jsonl.log",
+    "chunk": "\"mem_mb\": 13685} {\"ts\": \"2025-09-13T01:07:30.209576+05:30\", \"pod\": \"python-infer-eval-71\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"681e895c-e6c6-4b9e-8e1d-d4831fdeee96\", \"batch\": 56, \"lat_ms\": "
+  },
+  {
+    "source": "python-infer-eval-71.jsonl.log",
+    "chunk": "{\"ts\": \"2025-09-13T00:28:41.209576+05:30\", \"pod\": \"python-infer-eval-71\", \"level\": \"ERROR\", \"event\": \"inference\", \"req\": \"52db213d-9aa3-4ff5-a7c2-9510947db3aa\", \"batch\": 49, \"lat_ms\": 578, \"mem_mb\": 4"
+  },
+  {
+    "source": "python-infer-eval-71.jsonl.log",
+    "chunk": "\"batch\": 54, \"lat_ms\": 605, \"mem_mb\": 200} {\"ts\": \"2025-09-13T00:31:45.209576+05:30\", \"pod\": \"python-infer-eval-71\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"4a30724d-5852-4834-ae85-02337c05dd8"
+  },
+  {
+    "source": "python-infer-eval-71.jsonl.log",
+    "chunk": "{\"ts\": \"2025-09-13T00:35:00.209576+05:30\", \"pod\": \"python-infer-eval-71\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"329a7736-f967-4d4d-ba7d-0fe9ff1abc82\", \"batch\": 37, \"lat_ms\": 432, \"mem_mb\": 14"
+  },
+  {
+    "source": "python-infer-eval-71.jsonl.log",
+    "chunk": "\"event\": \"inference\", \"req\": \"2873c8e6-7d77-4571-b6ee-aa534c2e593d\", \"batch\": 14, \"lat_ms\": 207, \"mem_mb\": 9278} {\"ts\": \"2025-09-13T00:38:10.209576+05:30\", \"pod\": \"python-infer-eval-71\", \"level\": \"INF"
+  },
+  {
+    "source": "python-infer-eval-71.jsonl.log",
+    "chunk": "\"lat_ms\": 1605, \"mem_mb\": 12301} {\"ts\": \"2025-09-13T00:40:10.209576+05:30\", \"pod\": \"python-infer-eval-71\", \"level\": \"WARN\", \"event\": \"inference\", \"req\": \"5848b591-0faf-4a15-b817-847faae9f25a\", \"batch\""
+  },
+  {
+    "source": "python-infer-eval-71.jsonl.log",
+    "chunk": "\"pod\": \"python-infer-eval-71\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"5065cc6d-9f73-4719-8eb8-0c7277bb5522\", \"batch\": 20, \"lat_ms\": 1354, \"mem_mb\": 11714} {\"ts\": \"2025-09-13T00:43:02.209576+05"
+  },
+  {
+    "source": "python-infer-eval-71.jsonl.log",
+    "chunk": "\"event\": \"inference\", \"req\": \"6ba5a51d-9971-4714-8f06-e49402d723bf\", \"batch\": 16, \"lat_ms\": 254, \"mem_mb\": 1465} {\"ts\": \"2025-09-13T00:46:04.209576+05:30\", \"pod\": \"python-infer-eval-71\", \"level\": \"DEB"
+  },
+  {
+    "source": "python-infer-eval-71.jsonl.log",
+    "chunk": "\"batch\": 4, \"lat_ms\": 691, \"mem_mb\": 14548} {\"ts\": \"2025-09-13T00:48:45.209576+05:30\", \"pod\": \"python-infer-eval-71\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"7b005691-e368-4be9-8e1c-22f32d9046d"
+  },
+  {
+    "source": "python-infer-eval-71.jsonl.log",
+    "chunk": "\"mem_mb\": 15080} {\"ts\": \"2025-09-13T00:51:23.209576+05:30\", \"pod\": \"python-infer-eval-71\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"d0733152-869a-4d0f-b201-a5dc0812330e\", \"batch\": 11, \"lat_ms\":"
+  },
+  {
+    "source": "python-infer-eval-71.jsonl.log",
+    "chunk": "\"level\": \"INFO\", \"event\": \"inference\", \"req\": \"8d19be38-ffc0-4f02-9455-680c89ca9c03\", \"batch\": 58, \"lat_ms\": 1970, \"mem_mb\": 5063} {\"ts\": \"2025-09-13T00:54:05.209576+05:30\", \"pod\": \"python-infer-eval-"
+  },
+  {
+    "source": "python-infer-eval-71.jsonl.log",
+    "chunk": "\"req\": \"601b7074-a966-4146-8998-ebd35ab483d7\", \"batch\": 36, \"lat_ms\": 1773, \"mem_mb\": 5835} {\"ts\": \"2025-09-13T00:56:54.209576+05:30\", \"pod\": \"python-infer-eval-71\", \"level\": \"DEBUG\", \"event\": \"infere"
+  },
+  {
+    "source": "python-infer-eval-71.jsonl.log",
+    "chunk": "\"lat_ms\": 1191, \"mem_mb\": 9584} {\"ts\": \"2025-09-13T00:59:49.209576+05:30\", \"pod\": \"python-infer-eval-71\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"bba90a36-227c-4c82-bf61-790393279da7\", \"batch\""
+  },
+  {
+    "source": "python-infer-eval-71.jsonl.log",
+    "chunk": "{\"ts\": \"2025-09-13T01:03:12.209576+05:30\", \"pod\": \"python-infer-eval-71\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"e98fecbd-c5bc-48ba-aa1f-b8acbbf4b559\", \"batch\": 62, \"lat_ms\": 912, \"mem_mb\": 63"
+  },
+  {
+    "source": "python-infer-eval-71.jsonl.log",
+    "chunk": "\"event\": \"inference\", \"req\": \"d803e27c-8c4f-4769-bf7c-e2292b36c710\", \"batch\": 23, \"lat_ms\": 1150, \"mem_mb\": 5927} {\"ts\": \"2025-09-13T01:05:34.209576+05:30\", \"pod\": \"python-infer-eval-71\", \"level\": \"IN"
+  },
+  {
+    "source": "python-infer-eval-71.jsonl.log",
+    "chunk": "\"mem_mb\": 13685} {\"ts\": \"2025-09-13T01:07:30.209576+05:30\", \"pod\": \"python-infer-eval-71\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"681e895c-e6c6-4b9e-8e1d-d4831fdeee96\", \"batch\": 56, \"lat_ms\": "
+  },
+  {
+    "source": "python-infer-eval-76.jsonl.log",
+    "chunk": "{\"ts\": \"2025-09-13T00:25:36.209576+05:30\", \"pod\": \"python-infer-eval-76\", \"level\": \"ERROR\", \"event\": \"inference\", \"req\": \"d20c6369-9bc8-4239-a431-457cc7547cf5\", \"batch\": 51, \"lat_ms\": 906, \"mem_mb\": 8"
+  },
+  {
+    "source": "python-infer-eval-76.jsonl.log",
+    "chunk": "\"event\": \"inference\", \"req\": \"f68ddfdb-29e6-43b4-99a3-1ba35895adb4\", \"batch\": 57, \"lat_ms\": 1805, \"mem_mb\": 5684} {\"ts\": \"2025-09-13T00:28:16.209576+05:30\", \"pod\": \"python-infer-eval-76\", \"level\": \"IN"
+  },
+  {
+    "source": "python-infer-eval-76.jsonl.log",
+    "chunk": "\"batch\": 51, \"lat_ms\": 1247, \"mem_mb\": 15222} {\"ts\": \"2025-09-13T00:30:52.209576+05:30\", \"pod\": \"python-infer-eval-76\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"334d85cb-4a4b-42ec-a6fa-40cc5254"
+  },
+  {
+    "source": "python-infer-eval-76.jsonl.log",
+    "chunk": "\"mem_mb\": 14384} {\"ts\": \"2025-09-13T00:33:40.209576+05:30\", \"pod\": \"python-infer-eval-76\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"08c82d84-203a-4cc2-aec2-d3a13c151fd1\", \"batch\": 49, \"lat_ms\": "
+  },
+  {
+    "source": "python-infer-eval-76.jsonl.log",
+    "chunk": "\"req\": \"cb4dbaa0-5dfe-49fe-9657-a2cf2d83d0cb\", \"batch\": 52, \"lat_ms\": 1311, \"mem_mb\": 7290} {\"ts\": \"2025-09-13T00:36:28.209576+05:30\", \"pod\": \"python-infer-eval-76\", \"level\": \"INFO\", \"event\": \"inferen"
+  },
+  {
+    "source": "python-infer-eval-76.jsonl.log",
+    "chunk": "\"mem_mb\": 11173} {\"ts\": \"2025-09-13T00:39:05.209576+05:30\", \"pod\": \"python-infer-eval-76\", \"level\": \"WARN\", \"event\": \"inference\", \"req\": \"56906b8c-309d-4142-a832-53cdb9b830ca\", \"batch\": 10, \"lat_ms\": "
+  },
+  {
+    "source": "python-infer-eval-76.jsonl.log",
+    "chunk": "\"level\": \"ERROR\", \"event\": \"inference\", \"req\": \"d71d4923-7641-439b-95c1-e38777c4e79d\", \"batch\": 40, \"lat_ms\": 390, \"mem_mb\": 12161} {\"ts\": \"2025-09-13T00:42:14.209576+05:30\", \"pod\": \"python-infer-eval"
+  },
+  {
+    "source": "python-infer-eval-76.jsonl.log",
+    "chunk": "\"req\": \"9f92e88e-eece-4b3e-b2b7-99b5aba77eda\", \"batch\": 38, \"lat_ms\": 1598, \"mem_mb\": 13440} {\"ts\": \"2025-09-13T00:44:57.209576+05:30\", \"pod\": \"python-infer-eval-76\", \"level\": \"INFO\", \"event\": \"infere"
+  },
+  {
+    "source": "python-infer-eval-76.jsonl.log",
+    "chunk": "\"mem_mb\": 8403} {\"ts\": \"2025-09-13T00:47:48.209576+05:30\", \"pod\": \"python-infer-eval-76\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"aa028f5b-d019-44b3-a6b4-a21ef6aebd7a\", \"batch\": 6, \"lat_ms\": 27"
+  },
+  {
+    "source": "python-infer-eval-76.jsonl.log",
+    "chunk": "\"pod\": \"python-infer-eval-76\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"4199a49c-805f-43d9-afe5-1a10aff01ca5\", \"batch\": 55, \"lat_ms\": 1191, \"mem_mb\": 9091} {\"ts\": \"2025-09-13T00:50:39.209576+05:"
+  },
+  {
+    "source": "python-infer-eval-76.jsonl.log",
+    "chunk": "\"event\": \"inference\", \"req\": \"1150cd06-287f-4a40-9502-6bc711ab25d9\", \"batch\": 2, \"lat_ms\": 1094, \"mem_mb\": 7660, \"error\": \"RuntimeError: model failed to allocate tensor\", \"trace\": \"Traceback (most rec"
+  },
+  {
+    "source": "python-infer-eval-76.jsonl.log",
+    "chunk": "\"lat_ms\": 515, \"mem_mb\": 13579} {\"ts\": \"2025-09-13T00:55:38.209576+05:30\", \"pod\": \"python-infer-eval-76\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"34c6640b-7fa0-444e-9132-852ea38d1dd1\", \"batch\""
+  },
+  {
+    "source": "python-infer-eval-76.jsonl.log",
+    "chunk": "\"pod\": \"python-infer-eval-76\", \"level\": \"ERROR\", \"event\": \"inference\", \"req\": \"f8357a45-c576-4d5e-8d09-f68a77d0df0a\", \"batch\": 62, \"lat_ms\": 1198, \"mem_mb\": 7556} {\"ts\": \"2025-09-13T00:58:37.209576+05"
+  },
+  {
+    "source": "python-infer-eval-76.jsonl.log",
+    "chunk": "\"event\": \"inference\", \"req\": \"71140e0b-a4fc-4e09-ac76-674edd3ef5da\", \"batch\": 51, \"lat_ms\": 681, \"mem_mb\": 11317} {\"ts\": \"2025-09-13T01:01:18.209576+05:30\", \"pod\": \"python-infer-eval-76\", \"level\": \"IN"
+  },
+  {
+    "source": "python-infer-eval-76.jsonl.log",
+    "chunk": "\"batch\": 46, \"lat_ms\": 784, \"mem_mb\": 8772} {\"ts\": \"2025-09-13T01:04:13.209576+05:30\", \"pod\": \"python-infer-eval-76\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"ca2322d8-ca46-40e3-9942-cbd8a3d6c5"
+  },
+  {
+    "source": "python-infer-eval-76.jsonl.log",
+    "chunk": "{\"ts\": \"2025-09-13T00:25:36.209576+05:30\", \"pod\": \"python-infer-eval-76\", \"level\": \"ERROR\", \"event\": \"inference\", \"req\": \"d20c6369-9bc8-4239-a431-457cc7547cf5\", \"batch\": 51, \"lat_ms\": 906, \"mem_mb\": 8"
+  },
+  {
+    "source": "python-infer-eval-76.jsonl.log",
+    "chunk": "\"event\": \"inference\", \"req\": \"f68ddfdb-29e6-43b4-99a3-1ba35895adb4\", \"batch\": 57, \"lat_ms\": 1805, \"mem_mb\": 5684} {\"ts\": \"2025-09-13T00:28:16.209576+05:30\", \"pod\": \"python-infer-eval-76\", \"level\": \"IN"
+  },
+  {
+    "source": "python-infer-eval-76.jsonl.log",
+    "chunk": "\"batch\": 51, \"lat_ms\": 1247, \"mem_mb\": 15222} {\"ts\": \"2025-09-13T00:30:52.209576+05:30\", \"pod\": \"python-infer-eval-76\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"334d85cb-4a4b-42ec-a6fa-40cc5254"
+  },
+  {
+    "source": "python-infer-eval-76.jsonl.log",
+    "chunk": "\"mem_mb\": 14384} {\"ts\": \"2025-09-13T00:33:40.209576+05:30\", \"pod\": \"python-infer-eval-76\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"08c82d84-203a-4cc2-aec2-d3a13c151fd1\", \"batch\": 49, \"lat_ms\": "
+  },
+  {
+    "source": "python-infer-eval-76.jsonl.log",
+    "chunk": "\"req\": \"cb4dbaa0-5dfe-49fe-9657-a2cf2d83d0cb\", \"batch\": 52, \"lat_ms\": 1311, \"mem_mb\": 7290} {\"ts\": \"2025-09-13T00:36:28.209576+05:30\", \"pod\": \"python-infer-eval-76\", \"level\": \"INFO\", \"event\": \"inferen"
+  },
+  {
+    "source": "python-infer-eval-76.jsonl.log",
+    "chunk": "\"mem_mb\": 11173} {\"ts\": \"2025-09-13T00:39:05.209576+05:30\", \"pod\": \"python-infer-eval-76\", \"level\": \"WARN\", \"event\": \"inference\", \"req\": \"56906b8c-309d-4142-a832-53cdb9b830ca\", \"batch\": 10, \"lat_ms\": "
+  },
+  {
+    "source": "python-infer-eval-76.jsonl.log",
+    "chunk": "\"level\": \"ERROR\", \"event\": \"inference\", \"req\": \"d71d4923-7641-439b-95c1-e38777c4e79d\", \"batch\": 40, \"lat_ms\": 390, \"mem_mb\": 12161} {\"ts\": \"2025-09-13T00:42:14.209576+05:30\", \"pod\": \"python-infer-eval"
+  },
+  {
+    "source": "python-infer-eval-76.jsonl.log",
+    "chunk": "\"req\": \"9f92e88e-eece-4b3e-b2b7-99b5aba77eda\", \"batch\": 38, \"lat_ms\": 1598, \"mem_mb\": 13440} {\"ts\": \"2025-09-13T00:44:57.209576+05:30\", \"pod\": \"python-infer-eval-76\", \"level\": \"INFO\", \"event\": \"infere"
+  },
+  {
+    "source": "python-infer-eval-76.jsonl.log",
+    "chunk": "\"mem_mb\": 8403} {\"ts\": \"2025-09-13T00:47:48.209576+05:30\", \"pod\": \"python-infer-eval-76\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"aa028f5b-d019-44b3-a6b4-a21ef6aebd7a\", \"batch\": 6, \"lat_ms\": 27"
+  },
+  {
+    "source": "python-infer-eval-76.jsonl.log",
+    "chunk": "\"pod\": \"python-infer-eval-76\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"4199a49c-805f-43d9-afe5-1a10aff01ca5\", \"batch\": 55, \"lat_ms\": 1191, \"mem_mb\": 9091} {\"ts\": \"2025-09-13T00:50:39.209576+05:"
+  },
+  {
+    "source": "python-infer-eval-76.jsonl.log",
+    "chunk": "\"event\": \"inference\", \"req\": \"1150cd06-287f-4a40-9502-6bc711ab25d9\", \"batch\": 2, \"lat_ms\": 1094, \"mem_mb\": 7660, \"error\": \"RuntimeError: model failed to allocate tensor\", \"trace\": \"Traceback (most rec"
+  },
+  {
+    "source": "python-infer-eval-76.jsonl.log",
+    "chunk": "\"lat_ms\": 515, \"mem_mb\": 13579} {\"ts\": \"2025-09-13T00:55:38.209576+05:30\", \"pod\": \"python-infer-eval-76\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"34c6640b-7fa0-444e-9132-852ea38d1dd1\", \"batch\""
+  },
+  {
+    "source": "python-infer-eval-76.jsonl.log",
+    "chunk": "\"pod\": \"python-infer-eval-76\", \"level\": \"ERROR\", \"event\": \"inference\", \"req\": \"f8357a45-c576-4d5e-8d09-f68a77d0df0a\", \"batch\": 62, \"lat_ms\": 1198, \"mem_mb\": 7556} {\"ts\": \"2025-09-13T00:58:37.209576+05"
+  },
+  {
+    "source": "python-infer-eval-76.jsonl.log",
+    "chunk": "\"event\": \"inference\", \"req\": \"71140e0b-a4fc-4e09-ac76-674edd3ef5da\", \"batch\": 51, \"lat_ms\": 681, \"mem_mb\": 11317} {\"ts\": \"2025-09-13T01:01:18.209576+05:30\", \"pod\": \"python-infer-eval-76\", \"level\": \"IN"
+  },
+  {
+    "source": "python-infer-eval-76.jsonl.log",
+    "chunk": "\"batch\": 46, \"lat_ms\": 784, \"mem_mb\": 8772} {\"ts\": \"2025-09-13T01:04:13.209576+05:30\", \"pod\": \"python-infer-eval-76\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"ca2322d8-ca46-40e3-9942-cbd8a3d6c5"
+  },
+  {
+    "source": "python-infer-eval-81.jsonl.log",
+    "chunk": "{\"ts\": \"2025-09-13T00:34:31.209576+05:30\", \"pod\": \"python-infer-eval-81\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"7de5bf8a-92cf-4088-9967-2878549608be\", \"batch\": 25, \"lat_ms\": 1315, \"mem_mb\": 1"
+  },
+  {
+    "source": "python-infer-eval-81.jsonl.log",
+    "chunk": "\"level\": \"ERROR\", \"event\": \"inference\", \"req\": \"3594e3ac-8d34-4348-92a2-84c0a8d85b1d\", \"batch\": 29, \"lat_ms\": 1000, \"mem_mb\": 2800} {\"ts\": \"2025-09-13T00:37:30.209576+05:30\", \"pod\": \"python-infer-eval"
+  },
+  {
+    "source": "python-infer-eval-81.jsonl.log",
+    "chunk": "recent call last): ...\"} {\"ts\": \"2025-09-13T00:39:44.209576+05:30\", \"pod\": \"python-infer-eval-81\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"e3b6bae1-d3cd-4d2f-987d-193f3f3887ff\", \"batch\": 61, \""
+  },
+  {
+    "source": "python-infer-eval-81.jsonl.log",
+    "chunk": "\"pod\": \"python-infer-eval-81\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"19cdafd9-d95a-4dc5-9e21-a5c4cfa6f933\", \"batch\": 64, \"lat_ms\": 16, \"mem_mb\": 2417} {\"ts\": \"2025-09-13T00:42:31.209576+05:30"
+  },
+  {
+    "source": "python-infer-eval-81.jsonl.log",
+    "chunk": "\"batch\": 43, \"lat_ms\": 220, \"mem_mb\": 2492} {\"ts\": \"2025-09-13T00:45:13.209576+05:30\", \"pod\": \"python-infer-eval-81\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"08c8fee6-90c4-401a-bea8-fac726806f"
+  },
+  {
+    "source": "python-infer-eval-81.jsonl.log",
+    "chunk": "{\"ts\": \"2025-09-13T00:48:14.209576+05:30\", \"pod\": \"python-infer-eval-81\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"1207ca29-c0bb-4201-b938-6e7864381971\", \"batch\": 59, \"lat_ms\": 925, \"mem_mb\": 1"
+  },
+  {
+    "source": "python-infer-eval-81.jsonl.log",
+    "chunk": "\"event\": \"inference\", \"req\": \"64cf3240-7733-49a5-9d20-cf8e88fedf45\", \"batch\": 2, \"lat_ms\": 177, \"mem_mb\": 6358} {\"ts\": \"2025-09-13T00:51:28.209576+05:30\", \"pod\": \"python-infer-eval-81\", \"level\": \"DEBU"
+  },
+  {
+    "source": "python-infer-eval-81.jsonl.log",
+    "chunk": "\"pod\": \"python-infer-eval-81\", \"level\": \"WARN\", \"event\": \"inference\", \"req\": \"07e32d24-d66f-41eb-9253-69dac1a638f0\", \"batch\": 12, \"lat_ms\": 196, \"mem_mb\": 7203} {\"ts\": \"2025-09-13T00:53:52.209576+05:3"
+  },
+  {
+    "source": "python-infer-eval-81.jsonl.log",
+    "chunk": "\"event\": \"inference\", \"req\": \"fe809859-e7d1-4cb7-8857-7f1c8b8fe772\", \"batch\": 22, \"lat_ms\": 1881, \"mem_mb\": 2471} {\"ts\": \"2025-09-13T00:56:44.209576+05:30\", \"pod\": \"python-infer-eval-81\", \"level\": \"IN"
+  },
+  {
+    "source": "python-infer-eval-81.jsonl.log",
+    "chunk": "\"lat_ms\": 75, \"mem_mb\": 14085} {\"ts\": \"2025-09-13T00:59:51.209576+05:30\", \"pod\": \"python-infer-eval-81\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"df32f3dc-e8f0-40b0-bfe4-2266421c44f3\", \"batch\": "
+  },
+  {
+    "source": "python-infer-eval-81.jsonl.log",
+    "chunk": "\"level\": \"ERROR\", \"event\": \"inference\", \"req\": \"7e4faa5f-3a5d-4791-92dc-8c80b3541fe7\", \"batch\": 17, \"lat_ms\": 42, \"mem_mb\": 10974} {\"ts\": \"2025-09-13T01:02:42.209576+05:30\", \"pod\": \"python-infer-eval-"
+  },
+  {
+    "source": "python-infer-eval-81.jsonl.log",
+    "chunk": "\"req\": \"bb4072a0-1aa3-46db-85ee-1c7c65b81687\", \"batch\": 11, \"lat_ms\": 1773, \"mem_mb\": 6354} {\"ts\": \"2025-09-13T01:05:40.209576+05:30\", \"pod\": \"python-infer-eval-81\", \"level\": \"ERROR\", \"event\": \"infere"
+  },
+  {
+    "source": "python-infer-eval-81.jsonl.log",
+    "chunk": "{\"ts\": \"2025-09-13T01:08:09.209576+05:30\", \"pod\": \"python-infer-eval-81\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"dfc761f5-a028-4c6f-9f0b-6af7bb5be057\", \"batch\": 51, \"lat_ms\": 384, \"mem_mb\": 15"
+  },
+  {
+    "source": "python-infer-eval-81.jsonl.log",
+    "chunk": "\"level\": \"WARN\", \"event\": \"inference\", \"req\": \"21753a73-4255-405f-b58e-a2145a9d79a0\", \"batch\": 8, \"lat_ms\": 1621, \"mem_mb\": 9157} {\"ts\": \"2025-09-13T01:11:21.209576+05:30\", \"pod\": \"python-infer-eval-8"
+  },
+  {
+    "source": "python-infer-eval-81.jsonl.log",
+    "chunk": "{\"ts\": \"2025-09-13T00:34:31.209576+05:30\", \"pod\": \"python-infer-eval-81\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"7de5bf8a-92cf-4088-9967-2878549608be\", \"batch\": 25, \"lat_ms\": 1315, \"mem_mb\": 1"
+  },
+  {
+    "source": "python-infer-eval-81.jsonl.log",
+    "chunk": "\"level\": \"ERROR\", \"event\": \"inference\", \"req\": \"3594e3ac-8d34-4348-92a2-84c0a8d85b1d\", \"batch\": 29, \"lat_ms\": 1000, \"mem_mb\": 2800} {\"ts\": \"2025-09-13T00:37:30.209576+05:30\", \"pod\": \"python-infer-eval"
+  },
+  {
+    "source": "python-infer-eval-81.jsonl.log",
+    "chunk": "recent call last): ...\"} {\"ts\": \"2025-09-13T00:39:44.209576+05:30\", \"pod\": \"python-infer-eval-81\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"e3b6bae1-d3cd-4d2f-987d-193f3f3887ff\", \"batch\": 61, \""
+  },
+  {
+    "source": "python-infer-eval-81.jsonl.log",
+    "chunk": "\"pod\": \"python-infer-eval-81\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"19cdafd9-d95a-4dc5-9e21-a5c4cfa6f933\", \"batch\": 64, \"lat_ms\": 16, \"mem_mb\": 2417} {\"ts\": \"2025-09-13T00:42:31.209576+05:30"
+  },
+  {
+    "source": "python-infer-eval-81.jsonl.log",
+    "chunk": "\"batch\": 43, \"lat_ms\": 220, \"mem_mb\": 2492} {\"ts\": \"2025-09-13T00:45:13.209576+05:30\", \"pod\": \"python-infer-eval-81\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"08c8fee6-90c4-401a-bea8-fac726806f"
+  },
+  {
+    "source": "python-infer-eval-81.jsonl.log",
+    "chunk": "{\"ts\": \"2025-09-13T00:48:14.209576+05:30\", \"pod\": \"python-infer-eval-81\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"1207ca29-c0bb-4201-b938-6e7864381971\", \"batch\": 59, \"lat_ms\": 925, \"mem_mb\": 1"
+  },
+  {
+    "source": "python-infer-eval-81.jsonl.log",
+    "chunk": "\"event\": \"inference\", \"req\": \"64cf3240-7733-49a5-9d20-cf8e88fedf45\", \"batch\": 2, \"lat_ms\": 177, \"mem_mb\": 6358} {\"ts\": \"2025-09-13T00:51:28.209576+05:30\", \"pod\": \"python-infer-eval-81\", \"level\": \"DEBU"
+  },
+  {
+    "source": "python-infer-eval-81.jsonl.log",
+    "chunk": "\"pod\": \"python-infer-eval-81\", \"level\": \"WARN\", \"event\": \"inference\", \"req\": \"07e32d24-d66f-41eb-9253-69dac1a638f0\", \"batch\": 12, \"lat_ms\": 196, \"mem_mb\": 7203} {\"ts\": \"2025-09-13T00:53:52.209576+05:3"
+  },
+  {
+    "source": "python-infer-eval-81.jsonl.log",
+    "chunk": "\"event\": \"inference\", \"req\": \"fe809859-e7d1-4cb7-8857-7f1c8b8fe772\", \"batch\": 22, \"lat_ms\": 1881, \"mem_mb\": 2471} {\"ts\": \"2025-09-13T00:56:44.209576+05:30\", \"pod\": \"python-infer-eval-81\", \"level\": \"IN"
+  },
+  {
+    "source": "python-infer-eval-81.jsonl.log",
+    "chunk": "\"lat_ms\": 75, \"mem_mb\": 14085} {\"ts\": \"2025-09-13T00:59:51.209576+05:30\", \"pod\": \"python-infer-eval-81\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"df32f3dc-e8f0-40b0-bfe4-2266421c44f3\", \"batch\": "
+  },
+  {
+    "source": "python-infer-eval-81.jsonl.log",
+    "chunk": "\"level\": \"ERROR\", \"event\": \"inference\", \"req\": \"7e4faa5f-3a5d-4791-92dc-8c80b3541fe7\", \"batch\": 17, \"lat_ms\": 42, \"mem_mb\": 10974} {\"ts\": \"2025-09-13T01:02:42.209576+05:30\", \"pod\": \"python-infer-eval-"
+  },
+  {
+    "source": "python-infer-eval-81.jsonl.log",
+    "chunk": "\"req\": \"bb4072a0-1aa3-46db-85ee-1c7c65b81687\", \"batch\": 11, \"lat_ms\": 1773, \"mem_mb\": 6354} {\"ts\": \"2025-09-13T01:05:40.209576+05:30\", \"pod\": \"python-infer-eval-81\", \"level\": \"ERROR\", \"event\": \"infere"
+  },
+  {
+    "source": "python-infer-eval-81.jsonl.log",
+    "chunk": "{\"ts\": \"2025-09-13T01:08:09.209576+05:30\", \"pod\": \"python-infer-eval-81\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"dfc761f5-a028-4c6f-9f0b-6af7bb5be057\", \"batch\": 51, \"lat_ms\": 384, \"mem_mb\": 15"
+  },
+  {
+    "source": "python-infer-eval-81.jsonl.log",
+    "chunk": "\"level\": \"WARN\", \"event\": \"inference\", \"req\": \"21753a73-4255-405f-b58e-a2145a9d79a0\", \"batch\": 8, \"lat_ms\": 1621, \"mem_mb\": 9157} {\"ts\": \"2025-09-13T01:11:21.209576+05:30\", \"pod\": \"python-infer-eval-8"
+  },
+  {
+    "source": "python-infer-eval-86.jsonl.log",
+    "chunk": "{\"ts\": \"2025-09-13T00:16:10.209576+05:30\", \"pod\": \"python-infer-eval-86\", \"level\": \"WARN\", \"event\": \"inference\", \"req\": \"64be8d97-f31d-4d5b-9e2f-fe3e6d757965\", \"batch\": 48, \"lat_ms\": 619, \"mem_mb\": 46"
+  },
+  {
+    "source": "python-infer-eval-86.jsonl.log",
+    "chunk": "to allocate tensor\", \"trace\": \"Traceback (most recent call last): ...\"} {\"ts\": \"2025-09-13T00:18:22.209576+05:30\", \"pod\": \"python-infer-eval-86\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"5fa2c02"
+  },
+  {
+    "source": "python-infer-eval-86.jsonl.log",
+    "chunk": "\"batch\": 1, \"lat_ms\": 1278, \"mem_mb\": 10085} {\"ts\": \"2025-09-13T00:20:50.209576+05:30\", \"pod\": \"python-infer-eval-86\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"b3658530-235a-4f13-8275-224b1d3d3"
+  },
+  {
+    "source": "python-infer-eval-86.jsonl.log",
+    "chunk": "\"pod\": \"python-infer-eval-86\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"a96131b9-b2b2-4829-aea3-7955018b03e8\", \"batch\": 2, \"lat_ms\": 64, \"mem_mb\": 3122} {\"ts\": \"2025-09-13T00:23:53.209576+05:30"
+  },
+  {
+    "source": "python-infer-eval-86.jsonl.log",
+    "chunk": "\"event\": \"inference\", \"req\": \"5708a142-9a63-4027-b9da-72b103db52b4\", \"batch\": 21, \"lat_ms\": 930, \"mem_mb\": 12797} {\"ts\": \"2025-09-13T00:26:57.209576+05:30\", \"pod\": \"python-infer-eval-86\", \"level\": \"IN"
+  },
+  {
+    "source": "python-infer-eval-86.jsonl.log",
+    "chunk": "\"lat_ms\": 565, \"mem_mb\": 1787} {\"ts\": \"2025-09-13T00:29:26.209576+05:30\", \"pod\": \"python-infer-eval-86\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"7943322a-ed33-4fae-a11b-d7418d8d9b90\", \"batch\": "
+  },
+  {
+    "source": "python-infer-eval-86.jsonl.log",
+    "chunk": "{\"ts\": \"2025-09-13T00:32:23.209576+05:30\", \"pod\": \"python-infer-eval-86\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"3ab9cd44-2595-4fb7-a6c9-fc477637c71f\", \"batch\": 25, \"lat_ms\": 500, \"mem_mb\": 1"
+  },
+  {
+    "source": "python-infer-eval-86.jsonl.log",
+    "chunk": "\"event\": \"inference\", \"req\": \"4d7b35f3-ae7f-4d6e-bebd-ad0a3d89ae96\", \"batch\": 4, \"lat_ms\": 1885, \"mem_mb\": 10295} {\"ts\": \"2025-09-13T00:35:12.209576+05:30\", \"pod\": \"python-infer-eval-86\", \"level\": \"IN"
+  },
+  {
+    "source": "python-infer-eval-86.jsonl.log",
+    "chunk": "\"lat_ms\": 30, \"mem_mb\": 7673} {\"ts\": \"2025-09-13T00:38:01.209576+05:30\", \"pod\": \"python-infer-eval-86\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"cd200aad-d247-4d8b-9b59-e1ca8dc2c3df\", \"batch\": 2"
+  },
+  {
+    "source": "python-infer-eval-86.jsonl.log",
+    "chunk": "\"pod\": \"python-infer-eval-86\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"6673eab0-8de2-4510-a4ff-4d215835e7e2\", \"batch\": 39, \"lat_ms\": 1453, \"mem_mb\": 10131} {\"ts\": \"2025-09-13T00:40:32.209576+05"
+  },
+  {
+    "source": "python-infer-eval-86.jsonl.log",
+    "chunk": "\"event\": \"inference\", \"req\": \"17d79dd0-f439-42fe-a785-a73ac96e2554\", \"batch\": 42, \"lat_ms\": 13, \"mem_mb\": 10305} {\"ts\": \"2025-09-13T00:43:32.209576+05:30\", \"pod\": \"python-infer-eval-86\", \"level\": \"DEB"
+  },
+  {
+    "source": "python-infer-eval-86.jsonl.log",
+    "chunk": "{\"ts\": \"2025-09-13T00:16:10.209576+05:30\", \"pod\": \"python-infer-eval-86\", \"level\": \"WARN\", \"event\": \"inference\", \"req\": \"64be8d97-f31d-4d5b-9e2f-fe3e6d757965\", \"batch\": 48, \"lat_ms\": 619, \"mem_mb\": 46"
+  },
+  {
+    "source": "python-infer-eval-86.jsonl.log",
+    "chunk": "to allocate tensor\", \"trace\": \"Traceback (most recent call last): ...\"} {\"ts\": \"2025-09-13T00:18:22.209576+05:30\", \"pod\": \"python-infer-eval-86\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"5fa2c02"
+  },
+  {
+    "source": "python-infer-eval-86.jsonl.log",
+    "chunk": "\"batch\": 1, \"lat_ms\": 1278, \"mem_mb\": 10085} {\"ts\": \"2025-09-13T00:20:50.209576+05:30\", \"pod\": \"python-infer-eval-86\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"b3658530-235a-4f13-8275-224b1d3d3"
+  },
+  {
+    "source": "python-infer-eval-86.jsonl.log",
+    "chunk": "\"pod\": \"python-infer-eval-86\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"a96131b9-b2b2-4829-aea3-7955018b03e8\", \"batch\": 2, \"lat_ms\": 64, \"mem_mb\": 3122} {\"ts\": \"2025-09-13T00:23:53.209576+05:30"
+  },
+  {
+    "source": "python-infer-eval-86.jsonl.log",
+    "chunk": "\"event\": \"inference\", \"req\": \"5708a142-9a63-4027-b9da-72b103db52b4\", \"batch\": 21, \"lat_ms\": 930, \"mem_mb\": 12797} {\"ts\": \"2025-09-13T00:26:57.209576+05:30\", \"pod\": \"python-infer-eval-86\", \"level\": \"IN"
+  },
+  {
+    "source": "python-infer-eval-86.jsonl.log",
+    "chunk": "\"lat_ms\": 565, \"mem_mb\": 1787} {\"ts\": \"2025-09-13T00:29:26.209576+05:30\", \"pod\": \"python-infer-eval-86\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"7943322a-ed33-4fae-a11b-d7418d8d9b90\", \"batch\": "
+  },
+  {
+    "source": "python-infer-eval-86.jsonl.log",
+    "chunk": "{\"ts\": \"2025-09-13T00:32:23.209576+05:30\", \"pod\": \"python-infer-eval-86\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"3ab9cd44-2595-4fb7-a6c9-fc477637c71f\", \"batch\": 25, \"lat_ms\": 500, \"mem_mb\": 1"
+  },
+  {
+    "source": "python-infer-eval-86.jsonl.log",
+    "chunk": "\"event\": \"inference\", \"req\": \"4d7b35f3-ae7f-4d6e-bebd-ad0a3d89ae96\", \"batch\": 4, \"lat_ms\": 1885, \"mem_mb\": 10295} {\"ts\": \"2025-09-13T00:35:12.209576+05:30\", \"pod\": \"python-infer-eval-86\", \"level\": \"IN"
+  },
+  {
+    "source": "python-infer-eval-86.jsonl.log",
+    "chunk": "\"lat_ms\": 30, \"mem_mb\": 7673} {\"ts\": \"2025-09-13T00:38:01.209576+05:30\", \"pod\": \"python-infer-eval-86\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"cd200aad-d247-4d8b-9b59-e1ca8dc2c3df\", \"batch\": 2"
+  },
+  {
+    "source": "python-infer-eval-86.jsonl.log",
+    "chunk": "\"pod\": \"python-infer-eval-86\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"6673eab0-8de2-4510-a4ff-4d215835e7e2\", \"batch\": 39, \"lat_ms\": 1453, \"mem_mb\": 10131} {\"ts\": \"2025-09-13T00:40:32.209576+05"
+  },
+  {
+    "source": "python-infer-eval-86.jsonl.log",
+    "chunk": "\"event\": \"inference\", \"req\": \"17d79dd0-f439-42fe-a785-a73ac96e2554\", \"batch\": 42, \"lat_ms\": 13, \"mem_mb\": 10305} {\"ts\": \"2025-09-13T00:43:32.209576+05:30\", \"pod\": \"python-infer-eval-86\", \"level\": \"DEB"
+  },
+  {
+    "source": "python-infer-eval-51.jsonl.log",
+    "chunk": "{\"ts\": \"2025-09-13T00:03:38.209576+05:30\", \"pod\": \"python-infer-eval-51\", \"level\": \"WARN\", \"event\": \"inference\", \"req\": \"9393749f-19f5-4154-abb2-7f7cd287f288\", \"batch\": 59, \"lat_ms\": 1466, \"mem_mb\": 1"
+  },
+  {
+    "source": "python-infer-eval-51.jsonl.log",
+    "chunk": "\"batch\": 20, \"lat_ms\": 688, \"mem_mb\": 6836} {\"ts\": \"2025-09-13T00:05:53.209576+05:30\", \"pod\": \"python-infer-eval-51\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"3bad225b-41e3-4a74-a4fe-8ae19b1cec"
+  },
+  {
+    "source": "python-infer-eval-51.jsonl.log",
+    "chunk": "\"mem_mb\": 7567} {\"ts\": \"2025-09-13T00:08:52.209576+05:30\", \"pod\": \"python-infer-eval-51\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"feefe208-105c-40b8-b7b7-ca9ae7c1dc0d\", \"batch\": 39, \"lat_ms\": 1"
+  },
+  {
+    "source": "python-infer-eval-51.jsonl.log",
+    "chunk": "\"pod\": \"python-infer-eval-51\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"23c16cc9-8556-4eb0-a751-c14c657887bc\", \"batch\": 14, \"lat_ms\": 455, \"mem_mb\": 2278} {\"ts\": \"2025-09-13T00:11:56.209576+05:3"
+  },
+  {
+    "source": "python-infer-eval-51.jsonl.log",
+    "chunk": "\"event\": \"inference\", \"req\": \"d4fbcdc1-d70f-40bd-91b0-e4e6d1933e01\", \"batch\": 11, \"lat_ms\": 45, \"mem_mb\": 4299} {\"ts\": \"2025-09-13T00:14:52.209576+05:30\", \"pod\": \"python-infer-eval-51\", \"level\": \"INFO"
+  },
+  {
+    "source": "python-infer-eval-51.jsonl.log",
+    "chunk": "\"batch\": 60, \"lat_ms\": 1162, \"mem_mb\": 7033} {\"ts\": \"2025-09-13T00:17:32.209576+05:30\", \"pod\": \"python-infer-eval-51\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"575392ba-915d-4ce5-b241-222b0e60e9"
+  },
+  {
+    "source": "python-infer-eval-51.jsonl.log",
+    "chunk": "\"mem_mb\": 15625} {\"ts\": \"2025-09-13T00:20:33.209576+05:30\", \"pod\": \"python-infer-eval-51\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"33181f8f-cece-4b4a-9935-bb514454d040\", \"batch\": 51, \"lat_ms\": "
+  },
+  {
+    "source": "python-infer-eval-51.jsonl.log",
+    "chunk": "\"pod\": \"python-infer-eval-51\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"d35d927f-1810-49e1-9c33-a6ee9350e343\", \"batch\": 11, \"lat_ms\": 1414, \"mem_mb\": 8431} {\"ts\": \"2025-09-13T00:23:32.209576+05:"
+  },
+  {
+    "source": "python-infer-eval-51.jsonl.log",
+    "chunk": "\"req\": \"442f3956-d5ad-495f-8dbd-a1eb84fc79d6\", \"batch\": 44, \"lat_ms\": 1143, \"mem_mb\": 1354} {\"ts\": \"2025-09-13T00:26:24.209576+05:30\", \"pod\": \"python-infer-eval-51\", \"level\": \"ERROR\", \"event\": \"infere"
+  },
+  {
+    "source": "python-infer-eval-51.jsonl.log",
+    "chunk": "{\"ts\": \"2025-09-13T00:29:23.209576+05:30\", \"pod\": \"python-infer-eval-51\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"f2ae1310-059e-475b-8e78-6f2054997ca8\", \"batch\": 58, \"lat_ms\": 1232, \"mem_mb\": "
+  },
+  {
+    "source": "python-infer-eval-51.jsonl.log",
+    "chunk": "\"event\": \"inference\", \"req\": \"84dc8133-6076-4069-81e9-6b531fde78e9\", \"batch\": 56, \"lat_ms\": 1564, \"mem_mb\": 14499} {\"ts\": \"2025-09-13T00:32:18.209576+05:30\", \"pod\": \"python-infer-eval-51\", \"level\": \"I"
+  },
+  {
+    "source": "python-infer-eval-51.jsonl.log",
+    "chunk": "\"mem_mb\": 5289} {\"ts\": \"2025-09-13T00:34:39.209576+05:30\", \"pod\": \"python-infer-eval-51\", \"level\": \"WARN\", \"event\": \"inference\", \"req\": \"2692f663-c59e-45a3-a2f8-fd642e56ba92\", \"batch\": 35, \"lat_ms\": 1"
+  },
+  {
+    "source": "python-infer-eval-51.jsonl.log",
+    "chunk": "\"pod\": \"python-infer-eval-51\", \"level\": \"WARN\", \"event\": \"inference\", \"req\": \"4807fe44-d755-4b14-9cbe-73e03647a184\", \"batch\": 23, \"lat_ms\": 1041, \"mem_mb\": 12371} {\"ts\": \"2025-09-13T00:37:51.209576+05"
+  },
+  {
+    "source": "python-infer-eval-51.jsonl.log",
+    "chunk": "{\"ts\": \"2025-09-13T00:03:38.209576+05:30\", \"pod\": \"python-infer-eval-51\", \"level\": \"WARN\", \"event\": \"inference\", \"req\": \"9393749f-19f5-4154-abb2-7f7cd287f288\", \"batch\": 59, \"lat_ms\": 1466, \"mem_mb\": 1"
+  },
+  {
+    "source": "python-infer-eval-51.jsonl.log",
+    "chunk": "\"batch\": 20, \"lat_ms\": 688, \"mem_mb\": 6836} {\"ts\": \"2025-09-13T00:05:53.209576+05:30\", \"pod\": \"python-infer-eval-51\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"3bad225b-41e3-4a74-a4fe-8ae19b1cec"
+  },
+  {
+    "source": "python-infer-eval-51.jsonl.log",
+    "chunk": "\"mem_mb\": 7567} {\"ts\": \"2025-09-13T00:08:52.209576+05:30\", \"pod\": \"python-infer-eval-51\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"feefe208-105c-40b8-b7b7-ca9ae7c1dc0d\", \"batch\": 39, \"lat_ms\": 1"
+  },
+  {
+    "source": "python-infer-eval-51.jsonl.log",
+    "chunk": "\"pod\": \"python-infer-eval-51\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"23c16cc9-8556-4eb0-a751-c14c657887bc\", \"batch\": 14, \"lat_ms\": 455, \"mem_mb\": 2278} {\"ts\": \"2025-09-13T00:11:56.209576+05:3"
+  },
+  {
+    "source": "python-infer-eval-51.jsonl.log",
+    "chunk": "\"event\": \"inference\", \"req\": \"d4fbcdc1-d70f-40bd-91b0-e4e6d1933e01\", \"batch\": 11, \"lat_ms\": 45, \"mem_mb\": 4299} {\"ts\": \"2025-09-13T00:14:52.209576+05:30\", \"pod\": \"python-infer-eval-51\", \"level\": \"INFO"
+  },
+  {
+    "source": "python-infer-eval-51.jsonl.log",
+    "chunk": "\"batch\": 60, \"lat_ms\": 1162, \"mem_mb\": 7033} {\"ts\": \"2025-09-13T00:17:32.209576+05:30\", \"pod\": \"python-infer-eval-51\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"575392ba-915d-4ce5-b241-222b0e60e9"
+  },
+  {
+    "source": "python-infer-eval-51.jsonl.log",
+    "chunk": "\"mem_mb\": 15625} {\"ts\": \"2025-09-13T00:20:33.209576+05:30\", \"pod\": \"python-infer-eval-51\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"33181f8f-cece-4b4a-9935-bb514454d040\", \"batch\": 51, \"lat_ms\": "
+  },
+  {
+    "source": "python-infer-eval-51.jsonl.log",
+    "chunk": "\"pod\": \"python-infer-eval-51\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"d35d927f-1810-49e1-9c33-a6ee9350e343\", \"batch\": 11, \"lat_ms\": 1414, \"mem_mb\": 8431} {\"ts\": \"2025-09-13T00:23:32.209576+05:"
+  },
+  {
+    "source": "python-infer-eval-51.jsonl.log",
+    "chunk": "\"req\": \"442f3956-d5ad-495f-8dbd-a1eb84fc79d6\", \"batch\": 44, \"lat_ms\": 1143, \"mem_mb\": 1354} {\"ts\": \"2025-09-13T00:26:24.209576+05:30\", \"pod\": \"python-infer-eval-51\", \"level\": \"ERROR\", \"event\": \"infere"
+  },
+  {
+    "source": "python-infer-eval-51.jsonl.log",
+    "chunk": "{\"ts\": \"2025-09-13T00:29:23.209576+05:30\", \"pod\": \"python-infer-eval-51\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"f2ae1310-059e-475b-8e78-6f2054997ca8\", \"batch\": 58, \"lat_ms\": 1232, \"mem_mb\": "
+  },
+  {
+    "source": "python-infer-eval-51.jsonl.log",
+    "chunk": "\"event\": \"inference\", \"req\": \"84dc8133-6076-4069-81e9-6b531fde78e9\", \"batch\": 56, \"lat_ms\": 1564, \"mem_mb\": 14499} {\"ts\": \"2025-09-13T00:32:18.209576+05:30\", \"pod\": \"python-infer-eval-51\", \"level\": \"I"
+  },
+  {
+    "source": "python-infer-eval-51.jsonl.log",
+    "chunk": "\"mem_mb\": 5289} {\"ts\": \"2025-09-13T00:34:39.209576+05:30\", \"pod\": \"python-infer-eval-51\", \"level\": \"WARN\", \"event\": \"inference\", \"req\": \"2692f663-c59e-45a3-a2f8-fd642e56ba92\", \"batch\": 35, \"lat_ms\": 1"
+  },
+  {
+    "source": "python-infer-eval-51.jsonl.log",
+    "chunk": "\"pod\": \"python-infer-eval-51\", \"level\": \"WARN\", \"event\": \"inference\", \"req\": \"4807fe44-d755-4b14-9cbe-73e03647a184\", \"batch\": 23, \"lat_ms\": 1041, \"mem_mb\": 12371} {\"ts\": \"2025-09-13T00:37:51.209576+05"
+  },
+  {
+    "source": "python-infer-eval-56.jsonl.log",
+    "chunk": "{\"ts\": \"2025-09-13T00:39:41.209576+05:30\", \"pod\": \"python-infer-eval-56\", \"level\": \"WARN\", \"event\": \"inference\", \"req\": \"c5864452-0ee8-41f8-bc52-1577e429abb1\", \"batch\": 19, \"lat_ms\": 539, \"mem_mb\": 72"
+  },
+  {
+    "source": "python-infer-eval-56.jsonl.log",
+    "chunk": "\"batch\": 53, \"lat_ms\": 313, \"mem_mb\": 5188} {\"ts\": \"2025-09-13T00:42:18.209576+05:30\", \"pod\": \"python-infer-eval-56\", \"level\": \"WARN\", \"event\": \"inference\", \"req\": \"32d514f2-3211-4398-8077-be258b5967b"
+  },
+  {
+    "source": "python-infer-eval-56.jsonl.log",
+    "chunk": "\"pod\": \"python-infer-eval-56\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"b52ae0ef-e450-463f-8a50-4a32eb3c9235\", \"batch\": 54, \"lat_ms\": 1136, \"mem_mb\": 2167} {\"ts\": \"2025-09-13T00:45:09.209576+05:"
+  },
+  {
+    "source": "python-infer-eval-56.jsonl.log",
+    "chunk": "\"event\": \"inference\", \"req\": \"b0defd88-64ed-4f65-845b-4d21e26962d6\", \"batch\": 37, \"lat_ms\": 1704, \"mem_mb\": 4653} {\"ts\": \"2025-09-13T00:47:54.209576+05:30\", \"pod\": \"python-infer-eval-56\", \"level\": \"IN"
+  },
+  {
+    "source": "python-infer-eval-56.jsonl.log",
+    "chunk": "\"batch\": 31, \"lat_ms\": 462, \"mem_mb\": 4289} {\"ts\": \"2025-09-13T00:50:58.209576+05:30\", \"pod\": \"python-infer-eval-56\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"22916285-fa04-4552-aa09-4c228ba4573"
+  },
+  {
+    "source": "python-infer-eval-56.jsonl.log",
+    "chunk": "\"mem_mb\": 1129} {\"ts\": \"2025-09-13T00:54:13.209576+05:30\", \"pod\": \"python-infer-eval-56\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"1108022b-2287-4de7-a2b0-81c8bf7341ca\", \"batch\": 28, \"lat_ms\": "
+  },
+  {
+    "source": "python-infer-eval-56.jsonl.log",
+    "chunk": "\"pod\": \"python-infer-eval-56\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"555d2d74-f10a-4b8f-9bf8-2a3971bae78e\", \"batch\": 3, \"lat_ms\": 471, \"mem_mb\": 1295} {\"ts\": \"2025-09-13T00:56:58.209576+05:30"
+  },
+  {
+    "source": "python-infer-eval-56.jsonl.log",
+    "chunk": "\"event\": \"inference\", \"req\": \"fba69fb9-4ff6-450e-b1cb-79c6819d7bef\", \"batch\": 49, \"lat_ms\": 834, \"mem_mb\": 986} {\"ts\": \"2025-09-13T01:00:01.209576+05:30\", \"pod\": \"python-infer-eval-56\", \"level\": \"INFO"
+  },
+  {
+    "source": "python-infer-eval-56.jsonl.log",
+    "chunk": "\"lat_ms\": 1627, \"mem_mb\": 9400} {\"ts\": \"2025-09-13T01:02:34.209576+05:30\", \"pod\": \"python-infer-eval-56\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"d72ca271-6020-439e-b609-00d35f9f1e52\", \"batch\""
+  },
+  {
+    "source": "python-infer-eval-56.jsonl.log",
+    "chunk": "\"pod\": \"python-infer-eval-56\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"f8ab50ae-0156-4fc6-9aef-7ad26d013890\", \"batch\": 44, \"lat_ms\": 866, \"mem_mb\": 14307} {\"ts\": \"2025-09-13T01:05:59.209576+05:"
+  },
+  {
+    "source": "python-infer-eval-56.jsonl.log",
+    "chunk": "\"req\": \"eb6550cc-4d58-4738-bf39-f1e5b488db09\", \"batch\": 50, \"lat_ms\": 290, \"mem_mb\": 11134} {\"ts\": \"2025-09-13T01:08:52.209576+05:30\", \"pod\": \"python-infer-eval-56\", \"level\": \"INFO\", \"event\": \"inferen"
+  },
+  {
+    "source": "python-infer-eval-56.jsonl.log",
+    "chunk": "{\"ts\": \"2025-09-13T00:39:41.209576+05:30\", \"pod\": \"python-infer-eval-56\", \"level\": \"WARN\", \"event\": \"inference\", \"req\": \"c5864452-0ee8-41f8-bc52-1577e429abb1\", \"batch\": 19, \"lat_ms\": 539, \"mem_mb\": 72"
+  },
+  {
+    "source": "python-infer-eval-56.jsonl.log",
+    "chunk": "\"batch\": 53, \"lat_ms\": 313, \"mem_mb\": 5188} {\"ts\": \"2025-09-13T00:42:18.209576+05:30\", \"pod\": \"python-infer-eval-56\", \"level\": \"WARN\", \"event\": \"inference\", \"req\": \"32d514f2-3211-4398-8077-be258b5967b"
+  },
+  {
+    "source": "python-infer-eval-56.jsonl.log",
+    "chunk": "\"pod\": \"python-infer-eval-56\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"b52ae0ef-e450-463f-8a50-4a32eb3c9235\", \"batch\": 54, \"lat_ms\": 1136, \"mem_mb\": 2167} {\"ts\": \"2025-09-13T00:45:09.209576+05:"
+  },
+  {
+    "source": "python-infer-eval-56.jsonl.log",
+    "chunk": "\"event\": \"inference\", \"req\": \"b0defd88-64ed-4f65-845b-4d21e26962d6\", \"batch\": 37, \"lat_ms\": 1704, \"mem_mb\": 4653} {\"ts\": \"2025-09-13T00:47:54.209576+05:30\", \"pod\": \"python-infer-eval-56\", \"level\": \"IN"
+  },
+  {
+    "source": "python-infer-eval-56.jsonl.log",
+    "chunk": "\"batch\": 31, \"lat_ms\": 462, \"mem_mb\": 4289} {\"ts\": \"2025-09-13T00:50:58.209576+05:30\", \"pod\": \"python-infer-eval-56\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"22916285-fa04-4552-aa09-4c228ba4573"
+  },
+  {
+    "source": "python-infer-eval-56.jsonl.log",
+    "chunk": "\"mem_mb\": 1129} {\"ts\": \"2025-09-13T00:54:13.209576+05:30\", \"pod\": \"python-infer-eval-56\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"1108022b-2287-4de7-a2b0-81c8bf7341ca\", \"batch\": 28, \"lat_ms\": "
+  },
+  {
+    "source": "python-infer-eval-56.jsonl.log",
+    "chunk": "\"pod\": \"python-infer-eval-56\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"555d2d74-f10a-4b8f-9bf8-2a3971bae78e\", \"batch\": 3, \"lat_ms\": 471, \"mem_mb\": 1295} {\"ts\": \"2025-09-13T00:56:58.209576+05:30"
+  },
+  {
+    "source": "python-infer-eval-56.jsonl.log",
+    "chunk": "\"event\": \"inference\", \"req\": \"fba69fb9-4ff6-450e-b1cb-79c6819d7bef\", \"batch\": 49, \"lat_ms\": 834, \"mem_mb\": 986} {\"ts\": \"2025-09-13T01:00:01.209576+05:30\", \"pod\": \"python-infer-eval-56\", \"level\": \"INFO"
+  },
+  {
+    "source": "python-infer-eval-56.jsonl.log",
+    "chunk": "\"lat_ms\": 1627, \"mem_mb\": 9400} {\"ts\": \"2025-09-13T01:02:34.209576+05:30\", \"pod\": \"python-infer-eval-56\", \"level\": \"DEBUG\", \"event\": \"inference\", \"req\": \"d72ca271-6020-439e-b609-00d35f9f1e52\", \"batch\""
+  },
+  {
+    "source": "python-infer-eval-56.jsonl.log",
+    "chunk": "\"pod\": \"python-infer-eval-56\", \"level\": \"INFO\", \"event\": \"inference\", \"req\": \"f8ab50ae-0156-4fc6-9aef-7ad26d013890\", \"batch\": 44, \"lat_ms\": 866, \"mem_mb\": 14307} {\"ts\": \"2025-09-13T01:05:59.209576+05:"
+  },
+  {
+    "source": "python-infer-eval-56.jsonl.log",
+    "chunk": "\"req\": \"eb6550cc-4d58-4738-bf39-f1e5b488db09\", \"batch\": 50, \"lat_ms\": 290, \"mem_mb\": 11134} {\"ts\": \"2025-09-13T01:08:52.209576+05:30\", \"pod\": \"python-infer-eval-56\", \"level\": \"INFO\", \"event\": \"inferen"
+  },
+  {
+    "source": "sample.txt",
+    "chunk": "2025-10-26T14:59:01Z inference-pod-1 INFO Model loaded in 1.23s 2025-10-26T15:02:11Z inference-pod-2 ERROR Timeout on request id=abc123; traceback: TimeoutError 2025-10-26T15:02:12Z inference-pod-2 WA"
+  },
+  {
+    "source": "sample.txt",
+    "chunk": "2025-10-26T14:59:01Z inference-pod-1 INFO Model loaded in 1.23s 2025-10-26T15:02:11Z inference-pod-2 ERROR Timeout on request id=abc123; traceback: TimeoutError 2025-10-26T15:02:12Z inference-pod-2 WA"
+  },
+  {
+    "source": "sample.txt",
+    "chunk": "2025-10-26T14:59:01Z inference-pod-1 INFO Model loaded in 1.23s 2025-10-26T15:02:11Z inference-pod-2 ERROR Timeout on request id=abc123; traceback: TimeoutError 2025-10-26T15:02:12Z inference-pod-2 WA"
+  }
+]
