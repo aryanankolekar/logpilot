@@ -39,7 +39,7 @@ export default function VisualizationPanel({ query }) {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const res = await fetch("http://127.0.0.1:6969/api/stats");
+        const res = await fetch("/api/stats");
         const data = await res.json();
         setStats(data);
       } catch (err) {
@@ -83,12 +83,22 @@ export default function VisualizationPanel({ query }) {
       </div>
     );
 
+  // Defensive destructuring with default values
+  const {
+    severity_counts = {},
+    timeline = [],
+    pod_performance = {},
+    errors_by_component = {},
+    auth_fails = 0,
+    network_timeouts = 0,
+  } = stats || {};
+
   // Chart 1 – Severity Breakdown
   const severityData = {
-    labels: Object.keys(stats.severity_counts),
+    labels: Object.keys(severity_counts),
     datasets: [
       {
-        data: Object.values(stats.severity_counts),
+        data: Object.values(severity_counts),
         backgroundColor: ["#cce5ff", "#ffeeba", "#f5c6cb", "#f8d7da"],
       },
     ],
@@ -96,11 +106,11 @@ export default function VisualizationPanel({ query }) {
 
   // Chart 2 – Error Timeline
   const timelineData = {
-    labels: stats.timeline.map((t) => t.timestamp.slice(11, 16)),
+    labels: timeline.map((t) => t.timestamp.slice(11, 16)),
     datasets: [
       {
         label: "Errors",
-        data: stats.timeline.map((t) => t.errors),
+        data: timeline.map((t) => t.errors),
         fill: true,
         borderColor: "#0078ff",
         tension: 0.3,
@@ -109,11 +119,9 @@ export default function VisualizationPanel({ query }) {
   };
 
   // Chart 3 – Pod Performance
-  const podNames = Object.keys(stats.pod_performance);
-  const podLatency = podNames.map(
-    (p) => stats.pod_performance[p].latency_avg_ms
-  );
-  const podTimeouts = podNames.map((p) => stats.pod_performance[p].timeouts);
+  const podNames = Object.keys(pod_performance);
+  const podLatency = podNames.map((p) => pod_performance[p].latency_avg_ms);
+  const podTimeouts = podNames.map((p) => pod_performance[p].timeouts);
 
   const podData = {
     labels: podNames,
@@ -133,23 +141,12 @@ export default function VisualizationPanel({ query }) {
 
   // Chart 4 – Request Distribution
   const compData = {
-    labels: Object.keys(stats.errors_by_component),
+    labels: Object.keys(errors_by_component),
     datasets: [
       {
         label: "Errors",
-        data: Object.values(stats.errors_by_component),
+        data: Object.values(errors_by_component),
         backgroundColor: "#a5d8ff",
-      },
-    ],
-  };
-
-  // Chart 5 – Security Events
-  const secData = {
-    labels: ["Auth Fails", "Network Timeouts"],
-    datasets: [
-      {
-        data: [stats.auth_fails, stats.network_timeouts],
-        backgroundColor: ["#ffb3b3", "#ffd6a5"],
       },
     ],
   };
@@ -174,11 +171,6 @@ export default function VisualizationPanel({ query }) {
       <div className={`viz-card ${highlight.components ? "highlight" : ""}`}>
         <h3>Error Distribution by Component</h3>
         <Bar data={compData} />
-      </div>
-
-      <div className={`viz-card ${highlight.security ? "highlight" : ""}`}>
-        <h3>Auth / Network Anomalies</h3>
-        <Pie data={secData} />
       </div>
     </div>
   );

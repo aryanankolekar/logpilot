@@ -9,7 +9,9 @@ export default defineConfig({
       "/api": {
         target: "http://127.0.0.1:6969",
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ""),
+        secure: false,
+        // ❌ removed rewrite — it was stripping `/api`
+        // ✅ now requests to /api/... are passed directly to Flask
       },
     },
   },
