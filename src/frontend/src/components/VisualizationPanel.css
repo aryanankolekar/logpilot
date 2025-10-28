@@ -1,0 +1,50 @@
+.viz-panel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  background: #f7f8fa; /* clean light gray */
+  color: #222;
+  height: 100%;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.viz-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.viz-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.viz-card canvas {
+  max-width: 100%;
+  max-height: 220px;
+  margin: auto;
+}
+
+.viz-card.highlight {
+  border: 2px solid #0078ff;
+  box-shadow: 0 0 12px rgba(0, 120, 255, 0.3);
+  transform: scale(1.02);
+}
+
+body,
+html,
+#root {
+  background: #f7f8fa !important;
+  height: 100%;
+  overflow: hidden;
+}

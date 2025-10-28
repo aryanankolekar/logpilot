@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
+import VisualizationPanel from "./components/VisualizationPanel";
 
 function App() {
   const [query, setQuery] = useState("");
@@ -74,12 +75,7 @@ function App() {
       {/* Visualization Section */}
       <div className="viz-section">
         <div className="viz-header">Log Insights</div>
-        <div className="viz-body">
-          <p>Visualizations will appear here dynamically.</p>
-          <p className="placeholder">
-            Real-time charts, error trends, pod metrics, etc.
-          </p>
-        </div>
+        <VisualizationPanel query={query} />
       </div>
     </div>
   );
