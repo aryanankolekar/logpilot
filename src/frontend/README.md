@@ -1,16 +1,62 @@
-# React + Vite
+# LogPilot Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This directory contains the frontend for the LogPilot application, an interactive web interface for visualizing and querying log data.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The frontend is a single-page application (SPA) built with React. It communicates with the backend API to:
 
-## React Compiler
+- Display real-time log statistics on an interactive dashboard.
+- Allow users to submit natural language queries.
+- Render query results in a user-friendly format.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- **Framework**: React
+- **Build Tool**: Vite
+- **Styling**: Standard CSS with some components using inline styles.
+- **Data Visualization**: `react-chartjs-2`
+- **API Communication**: `axios` (via a wrapper in `src/api.js`)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+### Prerequisites
+
+- Node.js 14+
+- npm
+
+### Setup
+
+1.  **Navigate to the frontend directory:**
+
+    ```bash
+    cd src/frontend
+    ```
+
+2.  **Install npm dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+3.  **Start the frontend development server:**
+    ```bash
+    npm run dev
+    ```
+    The application will be accessible at `http://localhost:5173`. The Vite development server is configured to proxy API requests to the backend running on `http://localhost:8000`.
+
+## Project Structure
+
+```
+frontend/
+├── public/              # Static assets
+└── src/
+    ├── components/      # Reusable React components
+    │   ├── QueryInput.jsx
+    │   ├── ResultsDisplay.jsx
+    │   └── VisualizationPanel.jsx
+    ├── App.jsx          # Main application component, manages layout and state.
+    ├── main.jsx         # Application entry point.
+    ├── api.js           # Wrapper for making API calls to the backend.
+    └── styles.css       # Global styles.
+```

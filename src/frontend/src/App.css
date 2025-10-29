@@ -17,6 +17,61 @@ html,
   overflow: hidden;
 }
 
+.side-panel {
+  width: 250px;
+  background-color: #f0f0f0;
+  transition: width 0.3s;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-panel.collapsed {
+  width: 0;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  transition: width 0.3s;
+  width: calc(100% - 250px);
+}
+
+.main-content.collapsed {
+  width: 100%;
+}
+
+.toggle-btn {
+  position: absolute;
+  left: 250px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 5px;
+  border-radius: 0 5px 5px 0;
+}
+
+.main-content.collapsed .toggle-btn {
+  left: 0;
+}
+
+.new-chat-btn {
+  margin: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.history {
+  padding: 10px;
+}
+
 /* Chat Section */
 .chat-section {
   width: 67%;
